@@ -204,8 +204,8 @@ namespace ClamWinApp
         /// </summary>
         private void InitNotifyPanelControls()
         {
-            linkLabelNotifyBack.BringToFront();
-            linkLabelNotifyNext.BringToFront();
+            //linkLabelNotifyBack.BringToFront();
+            //linkLabelNotifyNext.BringToFront();
         }
         /// <summary>
         /// Inits home panel controls
@@ -1915,23 +1915,23 @@ namespace ClamWinApp
         {
             ClamWinMainFormNotifications.NotificationPositions position = ClamWinMainFormNotifications.GetCurrentNotificationPos();
             
-            linkLabelNotifyBack.Enabled = false;            
-            linkLabelNotifyNext.Enabled = false;            
+            //linkLabelNotifyBack.Enabled = false;            
+            //linkLabelNotifyNext.Enabled = false;            
 
             if (position == ClamWinMainFormNotifications.NotificationPositions.Middle)
             {
-                linkLabelNotifyBack.Enabled = true;
-                linkLabelNotifyNext.Enabled = true;                
+                //linkLabelNotifyBack.Enabled = true;
+                //linkLabelNotifyNext.Enabled = true;                
             }            
             else if (position == ClamWinMainFormNotifications.NotificationPositions.Left)
             {
-                linkLabelNotifyBack.Enabled = false;
-                linkLabelNotifyNext.Enabled = true;                
+                //linkLabelNotifyBack.Enabled = false;
+                //linkLabelNotifyNext.Enabled = true;                
             }
             else if (position == ClamWinMainFormNotifications.NotificationPositions.Right)
             {
-                linkLabelNotifyBack.Enabled = true;
-                linkLabelNotifyNext.Enabled = false;                
+                //linkLabelNotifyBack.Enabled = true;
+                //linkLabelNotifyNext.Enabled = false;                
             }
             else if (position == ClamWinMainFormNotifications.NotificationPositions.NotificationsEmpty)
             {
@@ -2448,6 +2448,16 @@ namespace ClamWinApp
             }
 
             formSettings.Show();
+        }
+
+        private void linkHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void panelExHome_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
     #endregion

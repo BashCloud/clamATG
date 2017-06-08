@@ -57,7 +57,6 @@ namespace ClamWinApp
             this.menuItemTrayOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuItemTrayExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.linkHelp = new System.Windows.Forms.LinkLabel();
             this.imageFilesList = new System.Windows.Forms.ImageList(this.components);
             this.panelExRightPanel = new PanelsEx.PanelEx();
             this.panelDataFiles = new System.Windows.Forms.Panel();
@@ -166,7 +165,6 @@ namespace ClamWinApp
             this.radioButtonOnAccessOn = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.panelExGroup = new PanelsEx.PanelExGroup();
-            this.panelExHome = new PanelsEx.PanelEx();
             this.panelExScan = new PanelsEx.PanelEx();
             this.linkScanCritical = new System.Windows.Forms.LinkLabel();
             this.linkScanMyPC = new System.Windows.Forms.LinkLabel();
@@ -175,11 +173,13 @@ namespace ClamWinApp
             this.linkProtection = new System.Windows.Forms.LinkLabel();
             this.linkDatafiles = new System.Windows.Forms.LinkLabel();
             this.linkUpdate = new System.Windows.Forms.LinkLabel();
+            this.panelExHome = new PanelsEx.PanelEx();
             this.panelExNotification = new PanelsEx.PanelEx();
             this.linkLabelNotify = new System.Windows.Forms.LinkLabel();
-            this.linkLabelNotifyNext = new System.Windows.Forms.LinkLabel();
-            this.linkLabelNotifyBack = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.menuTray.SuspendLayout();
             this.panelExRightPanel.SuspendLayout();
             this.panelDataFiles.SuspendLayout();
@@ -212,6 +212,9 @@ namespace ClamWinApp
             this.panelExService.SuspendLayout();
             this.panelExNotification.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // trayIcon
@@ -248,15 +251,6 @@ namespace ClamWinApp
             resources.ApplyResources(this.menuItemTrayExit, "menuItemTrayExit");
             this.menuItemTrayExit.Click += new System.EventHandler(this.menuItemTrayExit_Click);
             // 
-            // linkHelp
-            // 
-            resources.ApplyResources(this.linkHelp, "linkHelp");
-            this.linkHelp.BackColor = System.Drawing.SystemColors.ControlText;
-            this.linkHelp.ForeColor = System.Drawing.SystemColors.Control;
-            this.linkHelp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.linkHelp.Name = "linkHelp";
-            this.linkHelp.TabStop = true;
-            // 
             // imageFilesList
             // 
             this.imageFilesList.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
@@ -265,7 +259,9 @@ namespace ClamWinApp
             // 
             // panelExRightPanel
             // 
-            this.panelExRightPanel.BackColor = System.Drawing.Color.Gray;
+            resources.ApplyResources(this.panelExRightPanel, "panelExRightPanel");
+            this.panelExRightPanel.BackColor = System.Drawing.Color.Transparent;
+            this.panelExRightPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelExRightPanel.ChangeCursor = false;
             this.panelExRightPanel.Controls.Add(this.panelDataFiles);
             this.panelExRightPanel.Controls.Add(this.panelUpdate);
@@ -277,13 +273,12 @@ namespace ClamWinApp
             this.panelExRightPanel.Controls.Add(this.panelScanCritical);
             this.panelExRightPanel.Controls.Add(this.panelProtection);
             this.panelExRightPanel.DrawCollapseExpandIcons = false;
-            this.panelExRightPanel.EndColour = System.Drawing.Color.White;
+            this.panelExRightPanel.EndColour = System.Drawing.Color.Transparent;
             this.panelExRightPanel.Image = null;
-            resources.ApplyResources(this.panelExRightPanel, "panelExRightPanel");
             this.panelExRightPanel.MouseSensitive = false;
             this.panelExRightPanel.Name = "panelExRightPanel";
             this.panelExRightPanel.PanelState = PanelsEx.PanelState.Expanded;
-            this.panelExRightPanel.StartColour = System.Drawing.Color.White;
+            this.panelExRightPanel.StartColour = System.Drawing.Color.Transparent;
             this.panelExRightPanel.TitleFont = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelExRightPanel.TitleFontColour = System.Drawing.Color.Black;
             this.panelExRightPanel.TitleText = "Select category:";
@@ -1102,31 +1097,14 @@ namespace ClamWinApp
             // 
             // panelExGroup
             // 
+            this.panelExGroup.BackColor = System.Drawing.Color.Transparent;
             this.panelExGroup.Border = 8;
-            this.panelExGroup.Controls.Add(this.panelExHome);
             this.panelExGroup.Controls.Add(this.panelExScan);
             this.panelExGroup.Controls.Add(this.panelExQuarantine);
             this.panelExGroup.Controls.Add(this.panelExService);
             resources.ApplyResources(this.panelExGroup, "panelExGroup");
             this.panelExGroup.Name = "panelExGroup";
             this.panelExGroup.Spacing = 8;
-            // 
-            // panelExHome
-            // 
-            resources.ApplyResources(this.panelExHome, "panelExHome");
-            this.panelExHome.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.panelExHome.ChangeCursor = true;
-            this.panelExHome.DrawCollapseExpandIcons = false;
-            this.panelExHome.EndColour = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(212)))), ((int)(((byte)(247)))));
-            this.panelExHome.Image = global::ClamWinApp.Properties.Resources.dw;
-            this.panelExHome.MouseSensitive = false;
-            this.panelExHome.Name = "panelExHome";
-            this.panelExHome.PanelState = PanelsEx.PanelState.Expanded;
-            this.panelExHome.StartColour = System.Drawing.Color.White;
-            this.panelExHome.TitleFont = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelExHome.TitleFontColour = System.Drawing.Color.Navy;
-            this.panelExHome.TitleText = "Home";
-            this.panelExHome.TitlePressed += new PanelsEx.TitlePressedEventHandler(this.panelExHome_TitlePressed);
             // 
             // panelExScan
             // 
@@ -1219,16 +1197,32 @@ namespace ClamWinApp
             this.linkUpdate.TabStop = true;
             this.linkUpdate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkUpdate_LinkClicked);
             // 
+            // panelExHome
+            // 
+            resources.ApplyResources(this.panelExHome, "panelExHome");
+            this.panelExHome.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.panelExHome.ChangeCursor = true;
+            this.panelExHome.DrawCollapseExpandIcons = false;
+            this.panelExHome.EndColour = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(212)))), ((int)(((byte)(247)))));
+            this.panelExHome.Image = global::ClamWinApp.Properties.Resources.dw;
+            this.panelExHome.MouseSensitive = false;
+            this.panelExHome.Name = "panelExHome";
+            this.panelExHome.PanelState = PanelsEx.PanelState.Expanded;
+            this.panelExHome.StartColour = System.Drawing.Color.White;
+            this.panelExHome.TitleFont = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelExHome.TitleFontColour = System.Drawing.Color.Navy;
+            this.panelExHome.TitleText = "Home";
+            this.panelExHome.TitlePressed += new PanelsEx.TitlePressedEventHandler(this.panelExHome_TitlePressed);
+            this.panelExHome.Paint += new System.Windows.Forms.PaintEventHandler(this.panelExHome_Paint);
+            // 
             // panelExNotification
             // 
             resources.ApplyResources(this.panelExNotification, "panelExNotification");
-            this.panelExNotification.BackColor = System.Drawing.Color.Gold;
+            this.panelExNotification.BackColor = System.Drawing.Color.Transparent;
             this.panelExNotification.ChangeCursor = false;
             this.panelExNotification.Controls.Add(this.linkLabelNotify);
-            this.panelExNotification.Controls.Add(this.linkLabelNotifyNext);
-            this.panelExNotification.Controls.Add(this.linkLabelNotifyBack);
             this.panelExNotification.DrawCollapseExpandIcons = false;
-            this.panelExNotification.EndColour = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(212)))), ((int)(((byte)(247)))));
+            this.panelExNotification.EndColour = System.Drawing.Color.Transparent;
             this.panelExNotification.Image = global::ClamWinApp.Properties.Resources.dw;
             this.panelExNotification.MouseSensitive = false;
             this.panelExNotification.Name = "panelExNotification";
@@ -1244,38 +1238,42 @@ namespace ClamWinApp
             this.linkLabelNotify.Name = "linkLabelNotify";
             this.linkLabelNotify.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelNotify_LinkClicked);
             // 
-            // linkLabelNotifyNext
-            // 
-            resources.ApplyResources(this.linkLabelNotifyNext, "linkLabelNotifyNext");
-            this.linkLabelNotifyNext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(212)))), ((int)(((byte)(247)))));
-            this.linkLabelNotifyNext.DisabledLinkColor = System.Drawing.Color.Navy;
-            this.linkLabelNotifyNext.ForeColor = System.Drawing.Color.Navy;
-            this.linkLabelNotifyNext.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelNotifyNext.LinkColor = System.Drawing.Color.DarkGoldenrod;
-            this.linkLabelNotifyNext.Name = "linkLabelNotifyNext";
-            this.linkLabelNotifyNext.TabStop = true;
-            this.linkLabelNotifyNext.Click += new System.EventHandler(this.linkLabelNotifyNext_Click);
-            // 
-            // linkLabelNotifyBack
-            // 
-            resources.ApplyResources(this.linkLabelNotifyBack, "linkLabelNotifyBack");
-            this.linkLabelNotifyBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(212)))), ((int)(((byte)(247)))));
-            this.linkLabelNotifyBack.DisabledLinkColor = System.Drawing.Color.DarkGoldenrod;
-            this.linkLabelNotifyBack.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelNotifyBack.LinkColor = System.Drawing.Color.DarkGoldenrod;
-            this.linkLabelNotifyBack.Name = "linkLabelNotifyBack";
-            this.linkLabelNotifyBack.TabStop = true;
-            this.linkLabelNotifyBack.Click += new System.EventHandler(this.linkLabelNotifyBack_Click);
-            // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::ClamWinApp.Properties.Resources.setting;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::ClamWinApp.Properties.Resources.help;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.home;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::ClamWinApp.Properties.Resources.scan;
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
             // 
             // ClamWinMainForm
             // 
@@ -1283,10 +1281,13 @@ namespace ClamWinApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.BackgroundImage = global::ClamWinApp.Properties.Resources.bg;
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.panelExHome);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelExNotification);
             this.Controls.Add(this.panelExRightPanel);
-            this.Controls.Add(this.linkHelp);
             this.Controls.Add(this.panelExGroup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -1337,8 +1338,10 @@ namespace ClamWinApp
             this.panelExService.ResumeLayout(false);
             this.panelExService.PerformLayout();
             this.panelExNotification.ResumeLayout(false);
-            this.panelExNotification.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1351,7 +1354,6 @@ namespace ClamWinApp
         private System.Windows.Forms.ToolStripMenuItem menuItemTrayExit;
         private System.Windows.Forms.ToolStripMenuItem menuItemTrayOpen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.LinkLabel linkHelp;
         private PanelsEx.PanelExGroup panelExGroup;
         private PanelsEx.PanelEx panelExService;
         private PanelsEx.PanelEx panelExScan;
@@ -1470,11 +1472,12 @@ namespace ClamWinApp
         private System.Windows.Forms.RadioButton radioButtonOnAccessOn;
         private PanelsEx.PanelEx panelExNotification;
         private System.Windows.Forms.LinkLabel linkLabelNotify;
-        private System.Windows.Forms.LinkLabel linkLabelNotifyNext;
-        private System.Windows.Forms.LinkLabel linkLabelNotifyBack;
         private System.Windows.Forms.LinkLabel linkLabelQuarantineSizeValue;
         private System.Windows.Forms.LinkLabel linkLabelQuarantineSize;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 
