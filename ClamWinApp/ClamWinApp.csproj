@@ -57,9 +57,9 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="TaskScheduler, Version=1.1.2169.29349, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="TaskScheduler, Version=1.1.6367.21799, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaskScheduler Project\bin\Debug\TaskScheduler.dll</HintPath>
+      <HintPath>Resources\TaskScheduler.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
