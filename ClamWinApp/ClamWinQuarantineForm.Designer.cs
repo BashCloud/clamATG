@@ -52,14 +52,15 @@ namespace ClamWinApp
         {
             this.components = new System.ComponentModel.Container();
             this.listViewQuarantineItems = new System.Windows.Forms.ListView();
-            this.columnHeaderItem = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderPath = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderTime = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderSize = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderItem = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuQuarantined = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemQuarantine = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemUnquarantine = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemQuaSelectAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemQuaRescan = new System.Windows.Forms.ToolStripMenuItem();
             this.progressBarCompressingProgress = new System.Windows.Forms.ProgressBar();
             this.labelFileName = new System.Windows.Forms.Label();
             this.tabControlQuarantine = new System.Windows.Forms.TabControl();
@@ -68,18 +69,17 @@ namespace ClamWinApp
             this.tabPageQuarantineQueue = new System.Windows.Forms.TabPage();
             this.buttonQueuedActions = new System.Windows.Forms.Button();
             this.listViewQueuedItems = new System.Windows.Forms.ListView();
-            this.columnHeaderQueuedFile = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderQueuedPath = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderQueuedSize = new System.Windows.Forms.ColumnHeader();
-            this.columnHeaderQueuedJob = new System.Windows.Forms.ColumnHeader();
+            this.columnHeaderQueuedFile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderQueuedPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderQueuedSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderQueuedJob = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuQueued = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItemQueueCancelProcessing = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemQueueSelectAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.toolStripMenuItemQuaRescan = new System.Windows.Forms.ToolStripMenuItem();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuQuarantined.SuspendLayout();
             this.tabControlQuarantine.SuspendLayout();
             this.tabPageQuarantineItems.SuspendLayout();
@@ -97,10 +97,11 @@ namespace ClamWinApp
             this.listViewQuarantineItems.ContextMenuStrip = this.contextMenuQuarantined;
             this.listViewQuarantineItems.FullRowSelect = true;
             this.listViewQuarantineItems.HideSelection = false;
-            this.listViewQuarantineItems.Location = new System.Drawing.Point(6, 6);
+            this.listViewQuarantineItems.Location = new System.Drawing.Point(9, 9);
+            this.listViewQuarantineItems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewQuarantineItems.Name = "listViewQuarantineItems";
             this.listViewQuarantineItems.ShowItemToolTips = true;
-            this.listViewQuarantineItems.Size = new System.Drawing.Size(610, 187);
+            this.listViewQuarantineItems.Size = new System.Drawing.Size(913, 286);
             this.listViewQuarantineItems.TabIndex = 0;
             this.listViewQuarantineItems.UseCompatibleStateImageBehavior = false;
             this.listViewQuarantineItems.View = System.Windows.Forms.View.Details;
@@ -129,6 +130,7 @@ namespace ClamWinApp
             // contextMenuQuarantined
             // 
             this.contextMenuQuarantined.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.contextMenuQuarantined.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuQuarantined.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemQuarantine,
             this.toolStripMenuItemUnquarantine,
@@ -136,43 +138,52 @@ namespace ClamWinApp
             this.toolStripMenuItemQuaRescan});
             this.contextMenuQuarantined.Name = "contextMenuQuarantined";
             this.contextMenuQuarantined.ShowImageMargin = false;
-            this.contextMenuQuarantined.Size = new System.Drawing.Size(151, 92);
+            this.contextMenuQuarantined.Size = new System.Drawing.Size(195, 124);
             // 
             // toolStripMenuItemQuarantine
             // 
             this.toolStripMenuItemQuarantine.Name = "toolStripMenuItemQuarantine";
-            this.toolStripMenuItemQuarantine.Size = new System.Drawing.Size(150, 22);
+            this.toolStripMenuItemQuarantine.Size = new System.Drawing.Size(194, 30);
             this.toolStripMenuItemQuarantine.Text = "Quarantine file...";
             this.toolStripMenuItemQuarantine.Click += new System.EventHandler(this.toolStripMenuItemQuarantine_Click);
             // 
             // toolStripMenuItemUnquarantine
             // 
             this.toolStripMenuItemUnquarantine.Name = "toolStripMenuItemUnquarantine";
-            this.toolStripMenuItemUnquarantine.Size = new System.Drawing.Size(150, 22);
+            this.toolStripMenuItemUnquarantine.Size = new System.Drawing.Size(194, 30);
             this.toolStripMenuItemUnquarantine.Text = "Unquarantine";
             this.toolStripMenuItemUnquarantine.Click += new System.EventHandler(this.toolStripMenuItemUnquarantine_Click);
             // 
             // toolStripMenuItemQuaSelectAll
             // 
             this.toolStripMenuItemQuaSelectAll.Name = "toolStripMenuItemQuaSelectAll";
-            this.toolStripMenuItemQuaSelectAll.Size = new System.Drawing.Size(150, 22);
+            this.toolStripMenuItemQuaSelectAll.Size = new System.Drawing.Size(194, 30);
             this.toolStripMenuItemQuaSelectAll.Text = "Select All...";
             this.toolStripMenuItemQuaSelectAll.Click += new System.EventHandler(this.toolStripMenuItemQuaSelectAll_Click);
             // 
+            // toolStripMenuItemQuaRescan
+            // 
+            this.toolStripMenuItemQuaRescan.Name = "toolStripMenuItemQuaRescan";
+            this.toolStripMenuItemQuaRescan.Size = new System.Drawing.Size(194, 30);
+            this.toolStripMenuItemQuaRescan.Text = "Rescan selected...";
+            this.toolStripMenuItemQuaRescan.Click += new System.EventHandler(this.toolStripMenuItemQuaRescan_Click);
+            // 
             // progressBarCompressingProgress
             // 
-            this.progressBarCompressingProgress.Location = new System.Drawing.Point(9, 65);
+            this.progressBarCompressingProgress.Location = new System.Drawing.Point(22, 100);
+            this.progressBarCompressingProgress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.progressBarCompressingProgress.Name = "progressBarCompressingProgress";
-            this.progressBarCompressingProgress.Size = new System.Drawing.Size(580, 18);
+            this.progressBarCompressingProgress.Size = new System.Drawing.Size(937, 28);
             this.progressBarCompressingProgress.TabIndex = 2;
             this.progressBarCompressingProgress.Visible = false;
             // 
             // labelFileName
             // 
             this.labelFileName.AutoEllipsis = true;
-            this.labelFileName.Location = new System.Drawing.Point(9, 32);
+            this.labelFileName.Location = new System.Drawing.Point(14, 49);
+            this.labelFileName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFileName.Name = "labelFileName";
-            this.labelFileName.Size = new System.Drawing.Size(580, 17);
+            this.labelFileName.Size = new System.Drawing.Size(870, 26);
             this.labelFileName.TabIndex = 3;
             this.labelFileName.Text = "FileName";
             this.labelFileName.Visible = false;
@@ -181,10 +192,11 @@ namespace ClamWinApp
             // 
             this.tabControlQuarantine.Controls.Add(this.tabPageQuarantineItems);
             this.tabControlQuarantine.Controls.Add(this.tabPageQuarantineQueue);
-            this.tabControlQuarantine.Location = new System.Drawing.Point(12, 101);
+            this.tabControlQuarantine.Location = new System.Drawing.Point(18, 155);
+            this.tabControlQuarantine.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControlQuarantine.Name = "tabControlQuarantine";
             this.tabControlQuarantine.SelectedIndex = 0;
-            this.tabControlQuarantine.Size = new System.Drawing.Size(630, 251);
+            this.tabControlQuarantine.Size = new System.Drawing.Size(945, 386);
             this.tabControlQuarantine.TabIndex = 4;
             this.tabControlQuarantine.SelectedIndexChanged += new System.EventHandler(this.tabControlQuarantine_SelectedIndexChanged);
             // 
@@ -192,19 +204,21 @@ namespace ClamWinApp
             // 
             this.tabPageQuarantineItems.Controls.Add(this.buttonQuarantinedActions);
             this.tabPageQuarantineItems.Controls.Add(this.listViewQuarantineItems);
-            this.tabPageQuarantineItems.Location = new System.Drawing.Point(4, 22);
+            this.tabPageQuarantineItems.Location = new System.Drawing.Point(4, 29);
+            this.tabPageQuarantineItems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPageQuarantineItems.Name = "tabPageQuarantineItems";
-            this.tabPageQuarantineItems.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageQuarantineItems.Size = new System.Drawing.Size(622, 225);
+            this.tabPageQuarantineItems.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPageQuarantineItems.Size = new System.Drawing.Size(937, 353);
             this.tabPageQuarantineItems.TabIndex = 0;
             this.tabPageQuarantineItems.Text = "Quarantined files";
             this.tabPageQuarantineItems.UseVisualStyleBackColor = true;
             // 
             // buttonQuarantinedActions
             // 
-            this.buttonQuarantinedActions.Location = new System.Drawing.Point(541, 196);
+            this.buttonQuarantinedActions.Location = new System.Drawing.Point(812, 302);
+            this.buttonQuarantinedActions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonQuarantinedActions.Name = "buttonQuarantinedActions";
-            this.buttonQuarantinedActions.Size = new System.Drawing.Size(75, 23);
+            this.buttonQuarantinedActions.Size = new System.Drawing.Size(112, 35);
             this.buttonQuarantinedActions.TabIndex = 3;
             this.buttonQuarantinedActions.Text = "Actions";
             this.buttonQuarantinedActions.UseVisualStyleBackColor = true;
@@ -214,19 +228,21 @@ namespace ClamWinApp
             // 
             this.tabPageQuarantineQueue.Controls.Add(this.buttonQueuedActions);
             this.tabPageQuarantineQueue.Controls.Add(this.listViewQueuedItems);
-            this.tabPageQuarantineQueue.Location = new System.Drawing.Point(4, 22);
+            this.tabPageQuarantineQueue.Location = new System.Drawing.Point(4, 29);
+            this.tabPageQuarantineQueue.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPageQuarantineQueue.Name = "tabPageQuarantineQueue";
-            this.tabPageQuarantineQueue.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageQuarantineQueue.Size = new System.Drawing.Size(622, 225);
+            this.tabPageQuarantineQueue.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPageQuarantineQueue.Size = new System.Drawing.Size(937, 353);
             this.tabPageQuarantineQueue.TabIndex = 1;
             this.tabPageQuarantineQueue.Text = "Quarantine queue";
             this.tabPageQuarantineQueue.UseVisualStyleBackColor = true;
             // 
             // buttonQueuedActions
             // 
-            this.buttonQueuedActions.Location = new System.Drawing.Point(541, 196);
+            this.buttonQueuedActions.Location = new System.Drawing.Point(812, 302);
+            this.buttonQueuedActions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonQueuedActions.Name = "buttonQueuedActions";
-            this.buttonQueuedActions.Size = new System.Drawing.Size(75, 23);
+            this.buttonQueuedActions.Size = new System.Drawing.Size(112, 35);
             this.buttonQueuedActions.TabIndex = 6;
             this.buttonQueuedActions.Text = "Actions";
             this.buttonQueuedActions.UseVisualStyleBackColor = true;
@@ -243,10 +259,11 @@ namespace ClamWinApp
             this.listViewQueuedItems.FullRowSelect = true;
             this.listViewQueuedItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewQueuedItems.HideSelection = false;
-            this.listViewQueuedItems.Location = new System.Drawing.Point(6, 6);
+            this.listViewQueuedItems.Location = new System.Drawing.Point(9, 9);
+            this.listViewQueuedItems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewQueuedItems.Name = "listViewQueuedItems";
             this.listViewQueuedItems.ShowItemToolTips = true;
-            this.listViewQueuedItems.Size = new System.Drawing.Size(610, 187);
+            this.listViewQueuedItems.Size = new System.Drawing.Size(913, 286);
             this.listViewQueuedItems.TabIndex = 5;
             this.listViewQueuedItems.UseCompatibleStateImageBehavior = false;
             this.listViewQueuedItems.View = System.Windows.Forms.View.Details;
@@ -273,23 +290,24 @@ namespace ClamWinApp
             // 
             // contextMenuQueued
             // 
+            this.contextMenuQueued.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuQueued.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItemQueueCancelProcessing,
             this.toolStripMenuItemQueueSelectAll});
             this.contextMenuQueued.Name = "contextMenuQueued";
-            this.contextMenuQueued.Size = new System.Drawing.Size(172, 48);
+            this.contextMenuQueued.Size = new System.Drawing.Size(227, 64);
             // 
             // toolStripMenuItemQueueCancelProcessing
             // 
             this.toolStripMenuItemQueueCancelProcessing.Name = "toolStripMenuItemQueueCancelProcessing";
-            this.toolStripMenuItemQueueCancelProcessing.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItemQueueCancelProcessing.Size = new System.Drawing.Size(226, 30);
             this.toolStripMenuItemQueueCancelProcessing.Text = "Cancel processing";
             this.toolStripMenuItemQueueCancelProcessing.Click += new System.EventHandler(this.toolStripMenuItemQueueCancelProcessing_Click);
             // 
             // toolStripMenuItemQueueSelectAll
             // 
             this.toolStripMenuItemQueueSelectAll.Name = "toolStripMenuItemQueueSelectAll";
-            this.toolStripMenuItemQueueSelectAll.Size = new System.Drawing.Size(171, 22);
+            this.toolStripMenuItemQueueSelectAll.Size = new System.Drawing.Size(226, 30);
             this.toolStripMenuItemQueueSelectAll.Text = "Select all...";
             this.toolStripMenuItemQueueSelectAll.Click += new System.EventHandler(this.toolStripMenuItemQueueSelectAll_Click);
             // 
@@ -312,27 +330,21 @@ namespace ClamWinApp
             // 
             this.columnHeader4.Text = "Size";
             // 
-            // toolStripMenuItemQuaRescan
-            // 
-            this.toolStripMenuItemQuaRescan.Name = "toolStripMenuItemQuaRescan";
-            this.toolStripMenuItemQuaRescan.Size = new System.Drawing.Size(150, 22);
-            this.toolStripMenuItemQuaRescan.Text = "Rescan selected...";
-            this.toolStripMenuItemQuaRescan.Click += new System.EventHandler(this.toolStripMenuItemQuaRescan_Click);
-            // 
             // ClamWinQuarantineForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(654, 364);
+            this.ClientSize = new System.Drawing.Size(981, 560);
             this.Controls.Add(this.labelFileName);
             this.Controls.Add(this.progressBarCompressingProgress);
             this.Controls.Add(this.tabControlQuarantine);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ClamWinQuarantineForm";
             this.Text = "Quarantine";
-            this.Resize += new System.EventHandler(this.ClamWinQuarantineForm_Resize);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClamWinQuarantineForm_FormClosing);
             this.Load += new System.EventHandler(this.ClamWinQuarantineForm_Load);
+            this.Resize += new System.EventHandler(this.ClamWinQuarantineForm_Resize);
             this.contextMenuQuarantined.ResumeLayout(false);
             this.tabControlQuarantine.ResumeLayout(false);
             this.tabPageQuarantineItems.ResumeLayout(false);
