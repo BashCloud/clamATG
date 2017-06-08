@@ -2429,6 +2429,26 @@ namespace ClamWinApp
         {
             int a = 0;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (formSettings.IsDisposed)
+            {
+                formSettings = new ClamWinSettingsForm();
+            }
+
+            formSettings.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (formSettings.IsDisposed)
+            {
+                formSettings = new ClamWinSettingsForm();
+            }
+
+            formSettings.Show();
+        }
     }
     #endregion
 }

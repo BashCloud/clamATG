@@ -58,51 +58,13 @@ namespace ClamWinApp
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuItemTrayExit = new System.Windows.Forms.ToolStripMenuItem();
             this.linkHelp = new System.Windows.Forms.LinkLabel();
-            this.linkSettings = new System.Windows.Forms.LinkLabel();
-            this.sqLiteDataAdapter = new System.Data.SQLite.SQLiteDataAdapter();
             this.imageFilesList = new System.Windows.Forms.ImageList(this.components);
             this.panelExRightPanel = new PanelsEx.PanelEx();
-            this.panelScan = new System.Windows.Forms.Panel();
-            this.buttonSCScan = new System.Windows.Forms.Button();
-            this.buttonSCRemove = new System.Windows.Forms.Button();
-            this.buttonSCAdd = new System.Windows.Forms.Button();
-            this.listViewSCItems = new System.Windows.Forms.ListView();
-            this.groupBoxSCStatistics = new ClamWinApp.GroupBoxEx();
-            this.progressBarScan = new System.Windows.Forms.ProgressBar();
-            this.linkLabelScanLastScanValue = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanScannedValue = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanThreatsValue = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanLastScan = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanScanned = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanThreats = new System.Windows.Forms.LinkLabel();
-            this.groupBoxSCSettings = new ClamWinApp.GroupBoxEx();
-            this.linkLabelScanSettingsActionDescr = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanSettings = new System.Windows.Forms.LinkLabel();
-            this.panelScanCritical = new System.Windows.Forms.Panel();
-            this.buttonSCriticalScan = new System.Windows.Forms.Button();
-            this.groupBoxSCCriticalStatistics = new ClamWinApp.GroupBoxEx();
-            this.progressBarScanCritical = new System.Windows.Forms.ProgressBar();
-            this.linkLabelScanCriticalLastScanValue = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanCriticalScannedValue = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanCriticalThreatsValue = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanCriticalLastScan = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanCriticalScanned = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanCriticalThreats = new System.Windows.Forms.LinkLabel();
-            this.buttonSCriticalRemove = new System.Windows.Forms.Button();
-            this.groupBoxSCCriticalSettings = new ClamWinApp.GroupBoxEx();
-            this.linkLabelScanCriticalSettingsActionDescr = new System.Windows.Forms.LinkLabel();
-            this.linkLabelScanCriticalAction = new System.Windows.Forms.LinkLabel();
-            this.buttonSCriticalAdd = new System.Windows.Forms.Button();
-            this.listViewSCCriticalItems = new System.Windows.Forms.ListView();
-            this.panelProtection = new System.Windows.Forms.Panel();
-            this.groupBoxProtectionOnAccess = new System.Windows.Forms.GroupBox();
-            this.radioButtonOnAccessSuspended = new System.Windows.Forms.RadioButton();
-            this.radioButtonOnAccessOff = new System.Windows.Forms.RadioButton();
-            this.radioButtonOnAccessOn = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
             this.panelDataFiles = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBoxDiskSpace = new ClamWinApp.GroupBoxEx();
+            this.linkLabelQuarantineSizeValue = new System.Windows.Forms.LinkLabel();
+            this.linkLabelQuarantineSize = new System.Windows.Forms.LinkLabel();
             this.linkLabelDataBaseSizeValue = new System.Windows.Forms.LinkLabel();
             this.linkLabelDataBaseSize = new System.Windows.Forms.LinkLabel();
             this.panelUpdate = new System.Windows.Forms.Panel();
@@ -165,6 +127,44 @@ namespace ClamWinApp
             this.groupBoxServiceProductInfo = new ClamWinApp.GroupBoxEx();
             this.linkLabelServiceVersionValue = new System.Windows.Forms.LinkLabel();
             this.linkLabelServiceVersion = new System.Windows.Forms.LinkLabel();
+            this.panelScan = new System.Windows.Forms.Panel();
+            this.buttonSCScan = new System.Windows.Forms.Button();
+            this.buttonSCRemove = new System.Windows.Forms.Button();
+            this.buttonSCAdd = new System.Windows.Forms.Button();
+            this.listViewSCItems = new System.Windows.Forms.ListView();
+            this.groupBoxSCStatistics = new ClamWinApp.GroupBoxEx();
+            this.progressBarScan = new System.Windows.Forms.ProgressBar();
+            this.linkLabelScanLastScanValue = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanScannedValue = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanThreatsValue = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanLastScan = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanScanned = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanThreats = new System.Windows.Forms.LinkLabel();
+            this.groupBoxSCSettings = new ClamWinApp.GroupBoxEx();
+            this.linkLabelScanSettingsActionDescr = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanSettings = new System.Windows.Forms.LinkLabel();
+            this.panelScanCritical = new System.Windows.Forms.Panel();
+            this.buttonSCriticalScan = new System.Windows.Forms.Button();
+            this.groupBoxSCCriticalStatistics = new ClamWinApp.GroupBoxEx();
+            this.progressBarScanCritical = new System.Windows.Forms.ProgressBar();
+            this.linkLabelScanCriticalLastScanValue = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanCriticalScannedValue = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanCriticalThreatsValue = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanCriticalLastScan = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanCriticalScanned = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanCriticalThreats = new System.Windows.Forms.LinkLabel();
+            this.buttonSCriticalRemove = new System.Windows.Forms.Button();
+            this.groupBoxSCCriticalSettings = new ClamWinApp.GroupBoxEx();
+            this.linkLabelScanCriticalSettingsActionDescr = new System.Windows.Forms.LinkLabel();
+            this.linkLabelScanCriticalAction = new System.Windows.Forms.LinkLabel();
+            this.buttonSCriticalAdd = new System.Windows.Forms.Button();
+            this.listViewSCCriticalItems = new System.Windows.Forms.ListView();
+            this.panelProtection = new System.Windows.Forms.Panel();
+            this.groupBoxProtectionOnAccess = new System.Windows.Forms.GroupBox();
+            this.radioButtonOnAccessSuspended = new System.Windows.Forms.RadioButton();
+            this.radioButtonOnAccessOff = new System.Windows.Forms.RadioButton();
+            this.radioButtonOnAccessOn = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
             this.panelExGroup = new PanelsEx.PanelExGroup();
             this.panelExHome = new PanelsEx.PanelEx();
             this.panelExScan = new PanelsEx.PanelEx();
@@ -179,18 +179,9 @@ namespace ClamWinApp
             this.linkLabelNotify = new System.Windows.Forms.LinkLabel();
             this.linkLabelNotifyNext = new System.Windows.Forms.LinkLabel();
             this.linkLabelNotifyBack = new System.Windows.Forms.LinkLabel();
-            this.linkLabelQuarantineSizeValue = new System.Windows.Forms.LinkLabel();
-            this.linkLabelQuarantineSize = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuTray.SuspendLayout();
             this.panelExRightPanel.SuspendLayout();
-            this.panelScan.SuspendLayout();
-            this.groupBoxSCStatistics.SuspendLayout();
-            this.groupBoxSCSettings.SuspendLayout();
-            this.panelScanCritical.SuspendLayout();
-            this.groupBoxSCCriticalStatistics.SuspendLayout();
-            this.groupBoxSCCriticalSettings.SuspendLayout();
-            this.panelProtection.SuspendLayout();
-            this.groupBoxProtectionOnAccess.SuspendLayout();
             this.panelDataFiles.SuspendLayout();
             this.groupBoxDiskSpace.SuspendLayout();
             this.panelUpdate.SuspendLayout();
@@ -207,11 +198,20 @@ namespace ClamWinApp
             this.groupBoxSCMyPCSettings.SuspendLayout();
             this.panelService.SuspendLayout();
             this.groupBoxServiceProductInfo.SuspendLayout();
+            this.panelScan.SuspendLayout();
+            this.groupBoxSCStatistics.SuspendLayout();
+            this.groupBoxSCSettings.SuspendLayout();
+            this.panelScanCritical.SuspendLayout();
+            this.groupBoxSCCriticalStatistics.SuspendLayout();
+            this.groupBoxSCCriticalSettings.SuspendLayout();
+            this.panelProtection.SuspendLayout();
+            this.groupBoxProtectionOnAccess.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelExGroup)).BeginInit();
             this.panelExGroup.SuspendLayout();
             this.panelExScan.SuspendLayout();
             this.panelExService.SuspendLayout();
             this.panelExNotification.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // trayIcon
@@ -223,6 +223,7 @@ namespace ClamWinApp
             // 
             // menuTray
             // 
+            this.menuTray.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuTray.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItemTrayOpen,
             this.toolStripSeparator1,
@@ -250,22 +251,11 @@ namespace ClamWinApp
             // linkHelp
             // 
             resources.ApplyResources(this.linkHelp, "linkHelp");
+            this.linkHelp.BackColor = System.Drawing.SystemColors.ControlText;
+            this.linkHelp.ForeColor = System.Drawing.SystemColors.Control;
+            this.linkHelp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.linkHelp.Name = "linkHelp";
             this.linkHelp.TabStop = true;
-            // 
-            // linkSettings
-            // 
-            resources.ApplyResources(this.linkSettings, "linkSettings");
-            this.linkSettings.Name = "linkSettings";
-            this.linkSettings.TabStop = true;
-            this.linkSettings.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkSettings_LinkClicked);
-            // 
-            // sqLiteDataAdapter
-            // 
-            this.sqLiteDataAdapter.DeleteCommand = null;
-            this.sqLiteDataAdapter.InsertCommand = null;
-            this.sqLiteDataAdapter.SelectCommand = null;
-            this.sqLiteDataAdapter.UpdateCommand = null;
             // 
             // imageFilesList
             // 
@@ -298,301 +288,6 @@ namespace ClamWinApp
             this.panelExRightPanel.TitleFontColour = System.Drawing.Color.Black;
             this.panelExRightPanel.TitleText = "Select category:";
             // 
-            // panelScan
-            // 
-            this.panelScan.Controls.Add(this.buttonSCScan);
-            this.panelScan.Controls.Add(this.buttonSCRemove);
-            this.panelScan.Controls.Add(this.buttonSCAdd);
-            this.panelScan.Controls.Add(this.listViewSCItems);
-            this.panelScan.Controls.Add(this.groupBoxSCStatistics);
-            this.panelScan.Controls.Add(this.groupBoxSCSettings);
-            resources.ApplyResources(this.panelScan, "panelScan");
-            this.panelScan.Name = "panelScan";
-            this.panelScan.VisibleChanged += new System.EventHandler(this.panelScan_VisibleChanged);
-            // 
-            // buttonSCScan
-            // 
-            resources.ApplyResources(this.buttonSCScan, "buttonSCScan");
-            this.buttonSCScan.Name = "buttonSCScan";
-            this.buttonSCScan.UseVisualStyleBackColor = true;
-            this.buttonSCScan.Click += new System.EventHandler(this.buttonSCScan_Click);
-            // 
-            // buttonSCRemove
-            // 
-            resources.ApplyResources(this.buttonSCRemove, "buttonSCRemove");
-            this.buttonSCRemove.Name = "buttonSCRemove";
-            this.buttonSCRemove.UseVisualStyleBackColor = true;
-            this.buttonSCRemove.Click += new System.EventHandler(this.buttonSCRemove_Click);
-            // 
-            // buttonSCAdd
-            // 
-            resources.ApplyResources(this.buttonSCAdd, "buttonSCAdd");
-            this.buttonSCAdd.Name = "buttonSCAdd";
-            this.buttonSCAdd.UseVisualStyleBackColor = true;
-            this.buttonSCAdd.Click += new System.EventHandler(this.buttonSCAdd_Click);
-            // 
-            // listViewSCItems
-            // 
-            this.listViewSCItems.CheckBoxes = true;
-            this.listViewSCItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            resources.ApplyResources(this.listViewSCItems, "listViewSCItems");
-            this.listViewSCItems.Name = "listViewSCItems";
-            this.listViewSCItems.SmallImageList = this.imageFilesList;
-            this.listViewSCItems.UseCompatibleStateImageBehavior = false;
-            this.listViewSCItems.View = System.Windows.Forms.View.Details;
-            // 
-            // groupBoxSCStatistics
-            // 
-            this.groupBoxSCStatistics.Controls.Add(this.progressBarScan);
-            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanLastScanValue);
-            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanScannedValue);
-            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanThreatsValue);
-            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanLastScan);
-            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanScanned);
-            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanThreats);
-            this.groupBoxSCStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.groupBoxSCStatistics, "groupBoxSCStatistics");
-            this.groupBoxSCStatistics.Name = "groupBoxSCStatistics";
-            this.groupBoxSCStatistics.TabStop = false;
-            this.groupBoxSCStatistics.Pressed += new ClamWinApp.GroupBoxEx.OnPressed(this.groupBoxSCStatistics_Pressed);
-            // 
-            // progressBarScan
-            // 
-            resources.ApplyResources(this.progressBarScan, "progressBarScan");
-            this.progressBarScan.Name = "progressBarScan";
-            // 
-            // linkLabelScanLastScanValue
-            // 
-            resources.ApplyResources(this.linkLabelScanLastScanValue, "linkLabelScanLastScanValue");
-            this.linkLabelScanLastScanValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanLastScanValue.Name = "linkLabelScanLastScanValue";
-            // 
-            // linkLabelScanScannedValue
-            // 
-            resources.ApplyResources(this.linkLabelScanScannedValue, "linkLabelScanScannedValue");
-            this.linkLabelScanScannedValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanScannedValue.Name = "linkLabelScanScannedValue";
-            // 
-            // linkLabelScanThreatsValue
-            // 
-            resources.ApplyResources(this.linkLabelScanThreatsValue, "linkLabelScanThreatsValue");
-            this.linkLabelScanThreatsValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanThreatsValue.Name = "linkLabelScanThreatsValue";
-            // 
-            // linkLabelScanLastScan
-            // 
-            resources.ApplyResources(this.linkLabelScanLastScan, "linkLabelScanLastScan");
-            this.linkLabelScanLastScan.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanLastScan.Name = "linkLabelScanLastScan";
-            this.linkLabelScanLastScan.TabStop = true;
-            // 
-            // linkLabelScanScanned
-            // 
-            resources.ApplyResources(this.linkLabelScanScanned, "linkLabelScanScanned");
-            this.linkLabelScanScanned.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanScanned.Name = "linkLabelScanScanned";
-            this.linkLabelScanScanned.TabStop = true;
-            // 
-            // linkLabelScanThreats
-            // 
-            resources.ApplyResources(this.linkLabelScanThreats, "linkLabelScanThreats");
-            this.linkLabelScanThreats.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanThreats.Name = "linkLabelScanThreats";
-            this.linkLabelScanThreats.TabStop = true;
-            // 
-            // groupBoxSCSettings
-            // 
-            this.groupBoxSCSettings.Controls.Add(this.linkLabelScanSettingsActionDescr);
-            this.groupBoxSCSettings.Controls.Add(this.linkLabelScanSettings);
-            this.groupBoxSCSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.groupBoxSCSettings, "groupBoxSCSettings");
-            this.groupBoxSCSettings.Name = "groupBoxSCSettings";
-            this.groupBoxSCSettings.TabStop = false;
-            this.groupBoxSCSettings.Pressed += new ClamWinApp.GroupBoxEx.OnPressed(this.groupBoxSCSettings_Pressed);
-            // 
-            // linkLabelScanSettingsActionDescr
-            // 
-            resources.ApplyResources(this.linkLabelScanSettingsActionDescr, "linkLabelScanSettingsActionDescr");
-            this.linkLabelScanSettingsActionDescr.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanSettingsActionDescr.Name = "linkLabelScanSettingsActionDescr";
-            // 
-            // linkLabelScanSettings
-            // 
-            resources.ApplyResources(this.linkLabelScanSettings, "linkLabelScanSettings");
-            this.linkLabelScanSettings.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanSettings.Name = "linkLabelScanSettings";
-            this.linkLabelScanSettings.TabStop = true;
-            // 
-            // panelScanCritical
-            // 
-            this.panelScanCritical.Controls.Add(this.buttonSCriticalScan);
-            this.panelScanCritical.Controls.Add(this.groupBoxSCCriticalStatistics);
-            this.panelScanCritical.Controls.Add(this.buttonSCriticalRemove);
-            this.panelScanCritical.Controls.Add(this.groupBoxSCCriticalSettings);
-            this.panelScanCritical.Controls.Add(this.buttonSCriticalAdd);
-            this.panelScanCritical.Controls.Add(this.listViewSCCriticalItems);
-            resources.ApplyResources(this.panelScanCritical, "panelScanCritical");
-            this.panelScanCritical.Name = "panelScanCritical";
-            this.panelScanCritical.VisibleChanged += new System.EventHandler(this.panelScanCritical_VisibleChanged);
-            // 
-            // buttonSCriticalScan
-            // 
-            resources.ApplyResources(this.buttonSCriticalScan, "buttonSCriticalScan");
-            this.buttonSCriticalScan.Name = "buttonSCriticalScan";
-            this.buttonSCriticalScan.UseVisualStyleBackColor = true;
-            this.buttonSCriticalScan.Click += new System.EventHandler(this.buttonSCriticalScan_Click);
-            // 
-            // groupBoxSCCriticalStatistics
-            // 
-            this.groupBoxSCCriticalStatistics.Controls.Add(this.progressBarScanCritical);
-            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalLastScanValue);
-            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalScannedValue);
-            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalThreatsValue);
-            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalLastScan);
-            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalScanned);
-            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalThreats);
-            this.groupBoxSCCriticalStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.groupBoxSCCriticalStatistics, "groupBoxSCCriticalStatistics");
-            this.groupBoxSCCriticalStatistics.Name = "groupBoxSCCriticalStatistics";
-            this.groupBoxSCCriticalStatistics.TabStop = false;
-            this.groupBoxSCCriticalStatistics.Pressed += new ClamWinApp.GroupBoxEx.OnPressed(this.groupBoxSCCriticalStatistics_Pressed);
-            // 
-            // progressBarScanCritical
-            // 
-            resources.ApplyResources(this.progressBarScanCritical, "progressBarScanCritical");
-            this.progressBarScanCritical.Name = "progressBarScanCritical";
-            // 
-            // linkLabelScanCriticalLastScanValue
-            // 
-            resources.ApplyResources(this.linkLabelScanCriticalLastScanValue, "linkLabelScanCriticalLastScanValue");
-            this.linkLabelScanCriticalLastScanValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanCriticalLastScanValue.Name = "linkLabelScanCriticalLastScanValue";
-            // 
-            // linkLabelScanCriticalScannedValue
-            // 
-            resources.ApplyResources(this.linkLabelScanCriticalScannedValue, "linkLabelScanCriticalScannedValue");
-            this.linkLabelScanCriticalScannedValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanCriticalScannedValue.Name = "linkLabelScanCriticalScannedValue";
-            // 
-            // linkLabelScanCriticalThreatsValue
-            // 
-            resources.ApplyResources(this.linkLabelScanCriticalThreatsValue, "linkLabelScanCriticalThreatsValue");
-            this.linkLabelScanCriticalThreatsValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanCriticalThreatsValue.Name = "linkLabelScanCriticalThreatsValue";
-            // 
-            // linkLabelScanCriticalLastScan
-            // 
-            resources.ApplyResources(this.linkLabelScanCriticalLastScan, "linkLabelScanCriticalLastScan");
-            this.linkLabelScanCriticalLastScan.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanCriticalLastScan.Name = "linkLabelScanCriticalLastScan";
-            this.linkLabelScanCriticalLastScan.TabStop = true;
-            // 
-            // linkLabelScanCriticalScanned
-            // 
-            resources.ApplyResources(this.linkLabelScanCriticalScanned, "linkLabelScanCriticalScanned");
-            this.linkLabelScanCriticalScanned.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanCriticalScanned.Name = "linkLabelScanCriticalScanned";
-            this.linkLabelScanCriticalScanned.TabStop = true;
-            // 
-            // linkLabelScanCriticalThreats
-            // 
-            resources.ApplyResources(this.linkLabelScanCriticalThreats, "linkLabelScanCriticalThreats");
-            this.linkLabelScanCriticalThreats.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanCriticalThreats.Name = "linkLabelScanCriticalThreats";
-            this.linkLabelScanCriticalThreats.TabStop = true;
-            // 
-            // buttonSCriticalRemove
-            // 
-            resources.ApplyResources(this.buttonSCriticalRemove, "buttonSCriticalRemove");
-            this.buttonSCriticalRemove.Name = "buttonSCriticalRemove";
-            this.buttonSCriticalRemove.UseVisualStyleBackColor = true;
-            this.buttonSCriticalRemove.Click += new System.EventHandler(this.buttonSCriticalRemove_Click);
-            // 
-            // groupBoxSCCriticalSettings
-            // 
-            this.groupBoxSCCriticalSettings.Controls.Add(this.linkLabelScanCriticalSettingsActionDescr);
-            this.groupBoxSCCriticalSettings.Controls.Add(this.linkLabelScanCriticalAction);
-            this.groupBoxSCCriticalSettings.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.groupBoxSCCriticalSettings, "groupBoxSCCriticalSettings");
-            this.groupBoxSCCriticalSettings.Name = "groupBoxSCCriticalSettings";
-            this.groupBoxSCCriticalSettings.TabStop = false;
-            this.groupBoxSCCriticalSettings.Pressed += new ClamWinApp.GroupBoxEx.OnPressed(this.groupBoxSCCriticalSettings_Pressed);
-            // 
-            // linkLabelScanCriticalSettingsActionDescr
-            // 
-            resources.ApplyResources(this.linkLabelScanCriticalSettingsActionDescr, "linkLabelScanCriticalSettingsActionDescr");
-            this.linkLabelScanCriticalSettingsActionDescr.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanCriticalSettingsActionDescr.Name = "linkLabelScanCriticalSettingsActionDescr";
-            // 
-            // linkLabelScanCriticalAction
-            // 
-            resources.ApplyResources(this.linkLabelScanCriticalAction, "linkLabelScanCriticalAction");
-            this.linkLabelScanCriticalAction.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelScanCriticalAction.Name = "linkLabelScanCriticalAction";
-            this.linkLabelScanCriticalAction.TabStop = true;
-            // 
-            // buttonSCriticalAdd
-            // 
-            resources.ApplyResources(this.buttonSCriticalAdd, "buttonSCriticalAdd");
-            this.buttonSCriticalAdd.Name = "buttonSCriticalAdd";
-            this.buttonSCriticalAdd.UseVisualStyleBackColor = true;
-            this.buttonSCriticalAdd.Click += new System.EventHandler(this.buttonSCriticalAdd_Click);
-            // 
-            // listViewSCCriticalItems
-            // 
-            this.listViewSCCriticalItems.CheckBoxes = true;
-            this.listViewSCCriticalItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            resources.ApplyResources(this.listViewSCCriticalItems, "listViewSCCriticalItems");
-            this.listViewSCCriticalItems.Name = "listViewSCCriticalItems";
-            this.listViewSCCriticalItems.SmallImageList = this.imageFilesList;
-            this.listViewSCCriticalItems.UseCompatibleStateImageBehavior = false;
-            this.listViewSCCriticalItems.View = System.Windows.Forms.View.Details;
-            // 
-            // panelProtection
-            // 
-            this.panelProtection.Controls.Add(this.groupBoxProtectionOnAccess);
-            this.panelProtection.Controls.Add(this.label5);
-            resources.ApplyResources(this.panelProtection, "panelProtection");
-            this.panelProtection.Name = "panelProtection";
-            // 
-            // groupBoxProtectionOnAccess
-            // 
-            this.groupBoxProtectionOnAccess.Controls.Add(this.radioButtonOnAccessSuspended);
-            this.groupBoxProtectionOnAccess.Controls.Add(this.radioButtonOnAccessOff);
-            this.groupBoxProtectionOnAccess.Controls.Add(this.radioButtonOnAccessOn);
-            resources.ApplyResources(this.groupBoxProtectionOnAccess, "groupBoxProtectionOnAccess");
-            this.groupBoxProtectionOnAccess.Name = "groupBoxProtectionOnAccess";
-            this.groupBoxProtectionOnAccess.TabStop = false;
-            // 
-            // radioButtonOnAccessSuspended
-            // 
-            resources.ApplyResources(this.radioButtonOnAccessSuspended, "radioButtonOnAccessSuspended");
-            this.radioButtonOnAccessSuspended.Name = "radioButtonOnAccessSuspended";
-            this.radioButtonOnAccessSuspended.TabStop = true;
-            this.radioButtonOnAccessSuspended.UseVisualStyleBackColor = true;
-            this.radioButtonOnAccessSuspended.CheckedChanged += new System.EventHandler(this.radioButtonOnAccessOn_CheckedChanged);
-            // 
-            // radioButtonOnAccessOff
-            // 
-            resources.ApplyResources(this.radioButtonOnAccessOff, "radioButtonOnAccessOff");
-            this.radioButtonOnAccessOff.Name = "radioButtonOnAccessOff";
-            this.radioButtonOnAccessOff.TabStop = true;
-            this.radioButtonOnAccessOff.UseVisualStyleBackColor = true;
-            this.radioButtonOnAccessOff.CheckedChanged += new System.EventHandler(this.radioButtonOnAccessOn_CheckedChanged);
-            // 
-            // radioButtonOnAccessOn
-            // 
-            resources.ApplyResources(this.radioButtonOnAccessOn, "radioButtonOnAccessOn");
-            this.radioButtonOnAccessOn.Name = "radioButtonOnAccessOn";
-            this.radioButtonOnAccessOn.TabStop = true;
-            this.radioButtonOnAccessOn.UseVisualStyleBackColor = true;
-            this.radioButtonOnAccessOn.CheckedChanged += new System.EventHandler(this.radioButtonOnAccessOn_CheckedChanged);
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
             // panelDataFiles
             // 
             this.panelDataFiles.Controls.Add(this.label4);
@@ -615,6 +310,19 @@ namespace ClamWinApp
             resources.ApplyResources(this.groupBoxDiskSpace, "groupBoxDiskSpace");
             this.groupBoxDiskSpace.Name = "groupBoxDiskSpace";
             this.groupBoxDiskSpace.TabStop = false;
+            // 
+            // linkLabelQuarantineSizeValue
+            // 
+            resources.ApplyResources(this.linkLabelQuarantineSizeValue, "linkLabelQuarantineSizeValue");
+            this.linkLabelQuarantineSizeValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelQuarantineSizeValue.Name = "linkLabelQuarantineSizeValue";
+            // 
+            // linkLabelQuarantineSize
+            // 
+            resources.ApplyResources(this.linkLabelQuarantineSize, "linkLabelQuarantineSize");
+            this.linkLabelQuarantineSize.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelQuarantineSize.Name = "linkLabelQuarantineSize";
+            this.linkLabelQuarantineSize.TabStop = true;
             // 
             // linkLabelDataBaseSizeValue
             // 
@@ -1097,6 +805,301 @@ namespace ClamWinApp
             this.linkLabelServiceVersion.Name = "linkLabelServiceVersion";
             this.linkLabelServiceVersion.TabStop = true;
             // 
+            // panelScan
+            // 
+            this.panelScan.Controls.Add(this.buttonSCScan);
+            this.panelScan.Controls.Add(this.buttonSCRemove);
+            this.panelScan.Controls.Add(this.buttonSCAdd);
+            this.panelScan.Controls.Add(this.listViewSCItems);
+            this.panelScan.Controls.Add(this.groupBoxSCStatistics);
+            this.panelScan.Controls.Add(this.groupBoxSCSettings);
+            resources.ApplyResources(this.panelScan, "panelScan");
+            this.panelScan.Name = "panelScan";
+            this.panelScan.VisibleChanged += new System.EventHandler(this.panelScan_VisibleChanged);
+            // 
+            // buttonSCScan
+            // 
+            resources.ApplyResources(this.buttonSCScan, "buttonSCScan");
+            this.buttonSCScan.Name = "buttonSCScan";
+            this.buttonSCScan.UseVisualStyleBackColor = true;
+            this.buttonSCScan.Click += new System.EventHandler(this.buttonSCScan_Click);
+            // 
+            // buttonSCRemove
+            // 
+            resources.ApplyResources(this.buttonSCRemove, "buttonSCRemove");
+            this.buttonSCRemove.Name = "buttonSCRemove";
+            this.buttonSCRemove.UseVisualStyleBackColor = true;
+            this.buttonSCRemove.Click += new System.EventHandler(this.buttonSCRemove_Click);
+            // 
+            // buttonSCAdd
+            // 
+            resources.ApplyResources(this.buttonSCAdd, "buttonSCAdd");
+            this.buttonSCAdd.Name = "buttonSCAdd";
+            this.buttonSCAdd.UseVisualStyleBackColor = true;
+            this.buttonSCAdd.Click += new System.EventHandler(this.buttonSCAdd_Click);
+            // 
+            // listViewSCItems
+            // 
+            this.listViewSCItems.CheckBoxes = true;
+            this.listViewSCItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            resources.ApplyResources(this.listViewSCItems, "listViewSCItems");
+            this.listViewSCItems.Name = "listViewSCItems";
+            this.listViewSCItems.SmallImageList = this.imageFilesList;
+            this.listViewSCItems.UseCompatibleStateImageBehavior = false;
+            this.listViewSCItems.View = System.Windows.Forms.View.Details;
+            // 
+            // groupBoxSCStatistics
+            // 
+            this.groupBoxSCStatistics.Controls.Add(this.progressBarScan);
+            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanLastScanValue);
+            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanScannedValue);
+            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanThreatsValue);
+            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanLastScan);
+            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanScanned);
+            this.groupBoxSCStatistics.Controls.Add(this.linkLabelScanThreats);
+            this.groupBoxSCStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.groupBoxSCStatistics, "groupBoxSCStatistics");
+            this.groupBoxSCStatistics.Name = "groupBoxSCStatistics";
+            this.groupBoxSCStatistics.TabStop = false;
+            this.groupBoxSCStatistics.Pressed += new ClamWinApp.GroupBoxEx.OnPressed(this.groupBoxSCStatistics_Pressed);
+            // 
+            // progressBarScan
+            // 
+            resources.ApplyResources(this.progressBarScan, "progressBarScan");
+            this.progressBarScan.Name = "progressBarScan";
+            // 
+            // linkLabelScanLastScanValue
+            // 
+            resources.ApplyResources(this.linkLabelScanLastScanValue, "linkLabelScanLastScanValue");
+            this.linkLabelScanLastScanValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanLastScanValue.Name = "linkLabelScanLastScanValue";
+            // 
+            // linkLabelScanScannedValue
+            // 
+            resources.ApplyResources(this.linkLabelScanScannedValue, "linkLabelScanScannedValue");
+            this.linkLabelScanScannedValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanScannedValue.Name = "linkLabelScanScannedValue";
+            // 
+            // linkLabelScanThreatsValue
+            // 
+            resources.ApplyResources(this.linkLabelScanThreatsValue, "linkLabelScanThreatsValue");
+            this.linkLabelScanThreatsValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanThreatsValue.Name = "linkLabelScanThreatsValue";
+            // 
+            // linkLabelScanLastScan
+            // 
+            resources.ApplyResources(this.linkLabelScanLastScan, "linkLabelScanLastScan");
+            this.linkLabelScanLastScan.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanLastScan.Name = "linkLabelScanLastScan";
+            this.linkLabelScanLastScan.TabStop = true;
+            // 
+            // linkLabelScanScanned
+            // 
+            resources.ApplyResources(this.linkLabelScanScanned, "linkLabelScanScanned");
+            this.linkLabelScanScanned.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanScanned.Name = "linkLabelScanScanned";
+            this.linkLabelScanScanned.TabStop = true;
+            // 
+            // linkLabelScanThreats
+            // 
+            resources.ApplyResources(this.linkLabelScanThreats, "linkLabelScanThreats");
+            this.linkLabelScanThreats.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanThreats.Name = "linkLabelScanThreats";
+            this.linkLabelScanThreats.TabStop = true;
+            // 
+            // groupBoxSCSettings
+            // 
+            this.groupBoxSCSettings.Controls.Add(this.linkLabelScanSettingsActionDescr);
+            this.groupBoxSCSettings.Controls.Add(this.linkLabelScanSettings);
+            this.groupBoxSCSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.groupBoxSCSettings, "groupBoxSCSettings");
+            this.groupBoxSCSettings.Name = "groupBoxSCSettings";
+            this.groupBoxSCSettings.TabStop = false;
+            this.groupBoxSCSettings.Pressed += new ClamWinApp.GroupBoxEx.OnPressed(this.groupBoxSCSettings_Pressed);
+            // 
+            // linkLabelScanSettingsActionDescr
+            // 
+            resources.ApplyResources(this.linkLabelScanSettingsActionDescr, "linkLabelScanSettingsActionDescr");
+            this.linkLabelScanSettingsActionDescr.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanSettingsActionDescr.Name = "linkLabelScanSettingsActionDescr";
+            // 
+            // linkLabelScanSettings
+            // 
+            resources.ApplyResources(this.linkLabelScanSettings, "linkLabelScanSettings");
+            this.linkLabelScanSettings.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanSettings.Name = "linkLabelScanSettings";
+            this.linkLabelScanSettings.TabStop = true;
+            // 
+            // panelScanCritical
+            // 
+            this.panelScanCritical.Controls.Add(this.buttonSCriticalScan);
+            this.panelScanCritical.Controls.Add(this.groupBoxSCCriticalStatistics);
+            this.panelScanCritical.Controls.Add(this.buttonSCriticalRemove);
+            this.panelScanCritical.Controls.Add(this.groupBoxSCCriticalSettings);
+            this.panelScanCritical.Controls.Add(this.buttonSCriticalAdd);
+            this.panelScanCritical.Controls.Add(this.listViewSCCriticalItems);
+            resources.ApplyResources(this.panelScanCritical, "panelScanCritical");
+            this.panelScanCritical.Name = "panelScanCritical";
+            this.panelScanCritical.VisibleChanged += new System.EventHandler(this.panelScanCritical_VisibleChanged);
+            // 
+            // buttonSCriticalScan
+            // 
+            resources.ApplyResources(this.buttonSCriticalScan, "buttonSCriticalScan");
+            this.buttonSCriticalScan.Name = "buttonSCriticalScan";
+            this.buttonSCriticalScan.UseVisualStyleBackColor = true;
+            this.buttonSCriticalScan.Click += new System.EventHandler(this.buttonSCriticalScan_Click);
+            // 
+            // groupBoxSCCriticalStatistics
+            // 
+            this.groupBoxSCCriticalStatistics.Controls.Add(this.progressBarScanCritical);
+            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalLastScanValue);
+            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalScannedValue);
+            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalThreatsValue);
+            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalLastScan);
+            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalScanned);
+            this.groupBoxSCCriticalStatistics.Controls.Add(this.linkLabelScanCriticalThreats);
+            this.groupBoxSCCriticalStatistics.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.groupBoxSCCriticalStatistics, "groupBoxSCCriticalStatistics");
+            this.groupBoxSCCriticalStatistics.Name = "groupBoxSCCriticalStatistics";
+            this.groupBoxSCCriticalStatistics.TabStop = false;
+            this.groupBoxSCCriticalStatistics.Pressed += new ClamWinApp.GroupBoxEx.OnPressed(this.groupBoxSCCriticalStatistics_Pressed);
+            // 
+            // progressBarScanCritical
+            // 
+            resources.ApplyResources(this.progressBarScanCritical, "progressBarScanCritical");
+            this.progressBarScanCritical.Name = "progressBarScanCritical";
+            // 
+            // linkLabelScanCriticalLastScanValue
+            // 
+            resources.ApplyResources(this.linkLabelScanCriticalLastScanValue, "linkLabelScanCriticalLastScanValue");
+            this.linkLabelScanCriticalLastScanValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanCriticalLastScanValue.Name = "linkLabelScanCriticalLastScanValue";
+            // 
+            // linkLabelScanCriticalScannedValue
+            // 
+            resources.ApplyResources(this.linkLabelScanCriticalScannedValue, "linkLabelScanCriticalScannedValue");
+            this.linkLabelScanCriticalScannedValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanCriticalScannedValue.Name = "linkLabelScanCriticalScannedValue";
+            // 
+            // linkLabelScanCriticalThreatsValue
+            // 
+            resources.ApplyResources(this.linkLabelScanCriticalThreatsValue, "linkLabelScanCriticalThreatsValue");
+            this.linkLabelScanCriticalThreatsValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanCriticalThreatsValue.Name = "linkLabelScanCriticalThreatsValue";
+            // 
+            // linkLabelScanCriticalLastScan
+            // 
+            resources.ApplyResources(this.linkLabelScanCriticalLastScan, "linkLabelScanCriticalLastScan");
+            this.linkLabelScanCriticalLastScan.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanCriticalLastScan.Name = "linkLabelScanCriticalLastScan";
+            this.linkLabelScanCriticalLastScan.TabStop = true;
+            // 
+            // linkLabelScanCriticalScanned
+            // 
+            resources.ApplyResources(this.linkLabelScanCriticalScanned, "linkLabelScanCriticalScanned");
+            this.linkLabelScanCriticalScanned.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanCriticalScanned.Name = "linkLabelScanCriticalScanned";
+            this.linkLabelScanCriticalScanned.TabStop = true;
+            // 
+            // linkLabelScanCriticalThreats
+            // 
+            resources.ApplyResources(this.linkLabelScanCriticalThreats, "linkLabelScanCriticalThreats");
+            this.linkLabelScanCriticalThreats.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanCriticalThreats.Name = "linkLabelScanCriticalThreats";
+            this.linkLabelScanCriticalThreats.TabStop = true;
+            // 
+            // buttonSCriticalRemove
+            // 
+            resources.ApplyResources(this.buttonSCriticalRemove, "buttonSCriticalRemove");
+            this.buttonSCriticalRemove.Name = "buttonSCriticalRemove";
+            this.buttonSCriticalRemove.UseVisualStyleBackColor = true;
+            this.buttonSCriticalRemove.Click += new System.EventHandler(this.buttonSCriticalRemove_Click);
+            // 
+            // groupBoxSCCriticalSettings
+            // 
+            this.groupBoxSCCriticalSettings.Controls.Add(this.linkLabelScanCriticalSettingsActionDescr);
+            this.groupBoxSCCriticalSettings.Controls.Add(this.linkLabelScanCriticalAction);
+            this.groupBoxSCCriticalSettings.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.groupBoxSCCriticalSettings, "groupBoxSCCriticalSettings");
+            this.groupBoxSCCriticalSettings.Name = "groupBoxSCCriticalSettings";
+            this.groupBoxSCCriticalSettings.TabStop = false;
+            this.groupBoxSCCriticalSettings.Pressed += new ClamWinApp.GroupBoxEx.OnPressed(this.groupBoxSCCriticalSettings_Pressed);
+            // 
+            // linkLabelScanCriticalSettingsActionDescr
+            // 
+            resources.ApplyResources(this.linkLabelScanCriticalSettingsActionDescr, "linkLabelScanCriticalSettingsActionDescr");
+            this.linkLabelScanCriticalSettingsActionDescr.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanCriticalSettingsActionDescr.Name = "linkLabelScanCriticalSettingsActionDescr";
+            // 
+            // linkLabelScanCriticalAction
+            // 
+            resources.ApplyResources(this.linkLabelScanCriticalAction, "linkLabelScanCriticalAction");
+            this.linkLabelScanCriticalAction.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabelScanCriticalAction.Name = "linkLabelScanCriticalAction";
+            this.linkLabelScanCriticalAction.TabStop = true;
+            // 
+            // buttonSCriticalAdd
+            // 
+            resources.ApplyResources(this.buttonSCriticalAdd, "buttonSCriticalAdd");
+            this.buttonSCriticalAdd.Name = "buttonSCriticalAdd";
+            this.buttonSCriticalAdd.UseVisualStyleBackColor = true;
+            this.buttonSCriticalAdd.Click += new System.EventHandler(this.buttonSCriticalAdd_Click);
+            // 
+            // listViewSCCriticalItems
+            // 
+            this.listViewSCCriticalItems.CheckBoxes = true;
+            this.listViewSCCriticalItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            resources.ApplyResources(this.listViewSCCriticalItems, "listViewSCCriticalItems");
+            this.listViewSCCriticalItems.Name = "listViewSCCriticalItems";
+            this.listViewSCCriticalItems.SmallImageList = this.imageFilesList;
+            this.listViewSCCriticalItems.UseCompatibleStateImageBehavior = false;
+            this.listViewSCCriticalItems.View = System.Windows.Forms.View.Details;
+            // 
+            // panelProtection
+            // 
+            this.panelProtection.Controls.Add(this.groupBoxProtectionOnAccess);
+            this.panelProtection.Controls.Add(this.label5);
+            resources.ApplyResources(this.panelProtection, "panelProtection");
+            this.panelProtection.Name = "panelProtection";
+            // 
+            // groupBoxProtectionOnAccess
+            // 
+            this.groupBoxProtectionOnAccess.Controls.Add(this.radioButtonOnAccessSuspended);
+            this.groupBoxProtectionOnAccess.Controls.Add(this.radioButtonOnAccessOff);
+            this.groupBoxProtectionOnAccess.Controls.Add(this.radioButtonOnAccessOn);
+            resources.ApplyResources(this.groupBoxProtectionOnAccess, "groupBoxProtectionOnAccess");
+            this.groupBoxProtectionOnAccess.Name = "groupBoxProtectionOnAccess";
+            this.groupBoxProtectionOnAccess.TabStop = false;
+            // 
+            // radioButtonOnAccessSuspended
+            // 
+            resources.ApplyResources(this.radioButtonOnAccessSuspended, "radioButtonOnAccessSuspended");
+            this.radioButtonOnAccessSuspended.Name = "radioButtonOnAccessSuspended";
+            this.radioButtonOnAccessSuspended.TabStop = true;
+            this.radioButtonOnAccessSuspended.UseVisualStyleBackColor = true;
+            this.radioButtonOnAccessSuspended.CheckedChanged += new System.EventHandler(this.radioButtonOnAccessOn_CheckedChanged);
+            // 
+            // radioButtonOnAccessOff
+            // 
+            resources.ApplyResources(this.radioButtonOnAccessOff, "radioButtonOnAccessOff");
+            this.radioButtonOnAccessOff.Name = "radioButtonOnAccessOff";
+            this.radioButtonOnAccessOff.TabStop = true;
+            this.radioButtonOnAccessOff.UseVisualStyleBackColor = true;
+            this.radioButtonOnAccessOff.CheckedChanged += new System.EventHandler(this.radioButtonOnAccessOn_CheckedChanged);
+            // 
+            // radioButtonOnAccessOn
+            // 
+            resources.ApplyResources(this.radioButtonOnAccessOn, "radioButtonOnAccessOn");
+            this.radioButtonOnAccessOn.Name = "radioButtonOnAccessOn";
+            this.radioButtonOnAccessOn.TabStop = true;
+            this.radioButtonOnAccessOn.UseVisualStyleBackColor = true;
+            this.radioButtonOnAccessOn.CheckedChanged += new System.EventHandler(this.radioButtonOnAccessOn_CheckedChanged);
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
             // panelExGroup
             // 
             this.panelExGroup.Border = 8;
@@ -1234,7 +1237,6 @@ namespace ClamWinApp
             this.panelExNotification.TitleFont = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelExNotification.TitleFontColour = System.Drawing.Color.Navy;
             this.panelExNotification.TitleText = "Notifications";
-            //this.panelExNotification.BackgroundImage = System.Drawing.Image);
             // 
             // linkLabelNotify
             // 
@@ -1265,27 +1267,25 @@ namespace ClamWinApp
             this.linkLabelNotifyBack.TabStop = true;
             this.linkLabelNotifyBack.Click += new System.EventHandler(this.linkLabelNotifyBack_Click);
             // 
-            // linkLabelQuarantineSizeValue
+            // pictureBox1
             // 
-            resources.ApplyResources(this.linkLabelQuarantineSizeValue, "linkLabelQuarantineSizeValue");
-            this.linkLabelQuarantineSizeValue.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelQuarantineSizeValue.Name = "linkLabelQuarantineSizeValue";
-            // 
-            // linkLabelQuarantineSize
-            // 
-            resources.ApplyResources(this.linkLabelQuarantineSize, "linkLabelQuarantineSize");
-            this.linkLabelQuarantineSize.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabelQuarantineSize.Name = "linkLabelQuarantineSize";
-            this.linkLabelQuarantineSize.TabStop = true;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::ClamWinApp.Properties.Resources.setting;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // ClamWinMainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackgroundImage = global::ClamWinApp.Properties.Resources.bg;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelExNotification);
             this.Controls.Add(this.panelExRightPanel);
-            this.Controls.Add(this.linkSettings);
             this.Controls.Add(this.linkHelp);
             this.Controls.Add(this.panelExGroup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -1295,17 +1295,6 @@ namespace ClamWinApp
             this.Load += new System.EventHandler(this.ClamWinMainForm_Load);
             this.menuTray.ResumeLayout(false);
             this.panelExRightPanel.ResumeLayout(false);
-            this.panelScan.ResumeLayout(false);
-            this.groupBoxSCStatistics.ResumeLayout(false);
-            this.groupBoxSCStatistics.PerformLayout();
-            this.groupBoxSCSettings.ResumeLayout(false);
-            this.panelScanCritical.ResumeLayout(false);
-            this.groupBoxSCCriticalStatistics.ResumeLayout(false);
-            this.groupBoxSCCriticalStatistics.PerformLayout();
-            this.groupBoxSCCriticalSettings.ResumeLayout(false);
-            this.panelProtection.ResumeLayout(false);
-            this.groupBoxProtectionOnAccess.ResumeLayout(false);
-            this.groupBoxProtectionOnAccess.PerformLayout();
             this.panelDataFiles.ResumeLayout(false);
             this.groupBoxDiskSpace.ResumeLayout(false);
             this.groupBoxDiskSpace.PerformLayout();
@@ -1330,6 +1319,17 @@ namespace ClamWinApp
             this.panelService.ResumeLayout(false);
             this.groupBoxServiceProductInfo.ResumeLayout(false);
             this.groupBoxServiceProductInfo.PerformLayout();
+            this.panelScan.ResumeLayout(false);
+            this.groupBoxSCStatistics.ResumeLayout(false);
+            this.groupBoxSCStatistics.PerformLayout();
+            this.groupBoxSCSettings.ResumeLayout(false);
+            this.panelScanCritical.ResumeLayout(false);
+            this.groupBoxSCCriticalStatistics.ResumeLayout(false);
+            this.groupBoxSCCriticalStatistics.PerformLayout();
+            this.groupBoxSCCriticalSettings.ResumeLayout(false);
+            this.panelProtection.ResumeLayout(false);
+            this.groupBoxProtectionOnAccess.ResumeLayout(false);
+            this.groupBoxProtectionOnAccess.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelExGroup)).EndInit();
             this.panelExGroup.ResumeLayout(false);
             this.panelExScan.ResumeLayout(false);
@@ -1338,6 +1338,7 @@ namespace ClamWinApp
             this.panelExService.PerformLayout();
             this.panelExNotification.ResumeLayout(false);
             this.panelExNotification.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1351,7 +1352,6 @@ namespace ClamWinApp
         private System.Windows.Forms.ToolStripMenuItem menuItemTrayOpen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.LinkLabel linkHelp;
-        private System.Windows.Forms.LinkLabel linkSettings;
         private PanelsEx.PanelExGroup panelExGroup;
         private PanelsEx.PanelEx panelExService;
         private PanelsEx.PanelEx panelExScan;
@@ -1474,7 +1474,7 @@ namespace ClamWinApp
         private System.Windows.Forms.LinkLabel linkLabelNotifyBack;
         private System.Windows.Forms.LinkLabel linkLabelQuarantineSizeValue;
         private System.Windows.Forms.LinkLabel linkLabelQuarantineSize;
-
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
