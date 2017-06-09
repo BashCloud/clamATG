@@ -11,7 +11,6 @@ namespace ClamWinApp
     public partial class ATG : Form
     {
         List<Panel> listPanel = new List<Panel>();
-        int index;
         public ATG()
         {
             InitializeComponent();
@@ -21,7 +20,11 @@ namespace ClamWinApp
         {
             listPanel.Add(panel1);
             listPanel.Add(panel2);
-            listPanel[index].BringToFront();
+            listPanel.Add(panel6);
+            listPanel.Add(panel7);
+            listPanel.Add(panel8);
+            listPanel.Add(panel9);
+            listPanel[0].BringToFront();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -52,6 +55,26 @@ namespace ClamWinApp
         private void panel4_Click(object sender, EventArgs e)
         {
             listPanel[1].BringToFront();
+        }
+
+        private void panel5_Click(object sender, EventArgs e)
+        {
+            listPanel[2].BringToFront();
+        }
+
+        private void panel10_Click(object sender, EventArgs e)
+        {
+            listPanel[3].BringToFront();
+        }
+
+        private void panel11_Click(object sender, EventArgs e)
+        {
+            listPanel[4].BringToFront();
+        }
+
+        private void panel12_Click(object sender, EventArgs e)
+        {
+            listPanel[5].BringToFront();
         }
     }
 }
