@@ -63,6 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ATG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATG.Designer.cs">
+      <DependentUpon>ATG.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClamWinDatabase.cs" />
     <Compile Include="ClamWinFilterData.cs" />
     <Compile Include="ClamWinFilterForm.cs">
@@ -165,6 +171,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ATG.resx">
+      <DependentUpon>ATG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClamWinFilterForm.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ClamWinFilterForm.cs</DependentUpon>
@@ -269,7 +278,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="Resources\app.config" />
     <None Include="Resources\dw.png" />
   </ItemGroup>
   <ItemGroup>

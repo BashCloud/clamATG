@@ -2459,6 +2459,12 @@ namespace ClamWinApp
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ATG ATGhome = new ATG();
+            ATGhome.ShowDialog();
+        }
     }
     #endregion
 }

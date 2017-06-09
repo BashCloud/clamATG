@@ -1269,6 +1269,7 @@ namespace ClamWinApp
             this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.home;
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 

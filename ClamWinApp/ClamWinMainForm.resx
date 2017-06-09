@@ -124,6 +124,21 @@
     <value>95, 12</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuItemTrayOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 30</value>
+  </data>
+  <data name="menuItemTrayOpen.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 6</value>
+  </data>
+  <data name="menuItemTrayExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 30</value>
+  </data>
+  <data name="menuItemTrayExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="menuTray.Size" type="System.Drawing.Size, System.Drawing">
     <value>129, 70</value>
   </data>
@@ -536,21 +551,6 @@
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="trayIcon.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="menuItemTrayOpen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 30</value>
-  </data>
-  <data name="menuItemTrayOpen.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 6</value>
-  </data>
-  <data name="menuItemTrayExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 30</value>
-  </data>
-  <data name="menuItemTrayExit.Text" xml:space="preserve">
-    <value>Exit</value>
   </data>
   <metadata name="imageFilesList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>340, 12</value>
@@ -1732,6 +1732,24 @@
   <data name="&gt;&gt;panelHome.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="buttonQuarantineManage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonQuarantineManage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 35</value>
+  </data>
+  <data name="buttonQuarantineManage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonQuarantineManage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 37</value>
+  </data>
+  <data name="buttonQuarantineManage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonQuarantineManage.Text" xml:space="preserve">
+    <value>Manage...</value>
+  </data>
   <data name="&gt;&gt;buttonQuarantineManage.Name" xml:space="preserve">
     <value>buttonQuarantineManage</value>
   </data>
@@ -2425,6 +2443,24 @@
   <data name="&gt;&gt;groupBoxSCMyPCStatistics.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 31</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 28</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="linkLabelScanMyPCSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
   <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.Name" xml:space="preserve">
     <value>linkLabelScanMyPCSettingsActionDescr</value>
   </data>
@@ -2436,6 +2472,24 @@
   </data>
   <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 31</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 28</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabelScanMyPCSettings.Text" xml:space="preserve">
+    <value>Action:</value>
   </data>
   <data name="&gt;&gt;linkLabelScanMyPCSettings.Name" xml:space="preserve">
     <value>linkLabelScanMyPCSettings</value>
@@ -3019,6 +3073,24 @@
   <data name="&gt;&gt;groupBoxSCStatistics.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="linkLabelScanSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 31</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 28</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="linkLabelScanSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
   <data name="&gt;&gt;linkLabelScanSettingsActionDescr.Name" xml:space="preserve">
     <value>linkLabelScanSettingsActionDescr</value>
   </data>
@@ -3030,6 +3102,24 @@
   </data>
   <data name="&gt;&gt;linkLabelScanSettingsActionDescr.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="linkLabelScanSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 31</value>
+  </data>
+  <data name="linkLabelScanSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="linkLabelScanSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 28</value>
+  </data>
+  <data name="linkLabelScanSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="linkLabelScanSettings.Text" xml:space="preserve">
+    <value>Action:</value>
   </data>
   <data name="&gt;&gt;linkLabelScanSettings.Name" xml:space="preserve">
     <value>linkLabelScanSettings</value>
@@ -3409,6 +3499,24 @@
   <data name="&gt;&gt;buttonSCriticalRemove.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>87, 31</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 28</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="linkLabelScanCriticalSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
   <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.Name" xml:space="preserve">
     <value>linkLabelScanCriticalSettingsActionDescr</value>
   </data>
@@ -3420,6 +3528,24 @@
   </data>
   <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 31</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 28</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="linkLabelScanCriticalAction.Text" xml:space="preserve">
+    <value>Action:</value>
   </data>
   <data name="&gt;&gt;linkLabelScanCriticalAction.Name" xml:space="preserve">
     <value>linkLabelScanCriticalAction</value>
@@ -3757,276 +3883,6 @@
   <data name="&gt;&gt;panelExRightPanel.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="buttonQuarantineManage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonQuarantineManage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>261, 35</value>
-  </data>
-  <data name="buttonQuarantineManage.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="buttonQuarantineManage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 37</value>
-  </data>
-  <data name="buttonQuarantineManage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="buttonQuarantineManage.Text" xml:space="preserve">
-    <value>Manage...</value>
-  </data>
-  <data name="&gt;&gt;buttonQuarantineManage.Name" xml:space="preserve">
-    <value>buttonQuarantineManage</value>
-  </data>
-  <data name="&gt;&gt;buttonQuarantineManage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonQuarantineManage.Parent" xml:space="preserve">
-    <value>groupBoxQuarantineManage</value>
-  </data>
-  <data name="&gt;&gt;buttonQuarantineManage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="linkLabelScanMyPCSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelScanMyPCSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 31</value>
-  </data>
-  <data name="linkLabelScanMyPCSettingsActionDescr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="linkLabelScanMyPCSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 28</value>
-  </data>
-  <data name="linkLabelScanMyPCSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="linkLabelScanMyPCSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopRight</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.Name" xml:space="preserve">
-    <value>linkLabelScanMyPCSettingsActionDescr</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.Parent" xml:space="preserve">
-    <value>groupBoxSCMyPCSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanMyPCSettingsActionDescr.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="linkLabelScanMyPCSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelScanMyPCSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 31</value>
-  </data>
-  <data name="linkLabelScanMyPCSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="linkLabelScanMyPCSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 28</value>
-  </data>
-  <data name="linkLabelScanMyPCSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="linkLabelScanMyPCSettings.Text" xml:space="preserve">
-    <value>Action:</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanMyPCSettings.Name" xml:space="preserve">
-    <value>linkLabelScanMyPCSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanMyPCSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanMyPCSettings.Parent" xml:space="preserve">
-    <value>groupBoxSCMyPCSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanMyPCSettings.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="linkLabelScanSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelScanSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 31</value>
-  </data>
-  <data name="linkLabelScanSettingsActionDescr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="linkLabelScanSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 28</value>
-  </data>
-  <data name="linkLabelScanSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="linkLabelScanSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopRight</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanSettingsActionDescr.Name" xml:space="preserve">
-    <value>linkLabelScanSettingsActionDescr</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanSettingsActionDescr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanSettingsActionDescr.Parent" xml:space="preserve">
-    <value>groupBoxSCSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanSettingsActionDescr.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="linkLabelScanSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelScanSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 31</value>
-  </data>
-  <data name="linkLabelScanSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="linkLabelScanSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 28</value>
-  </data>
-  <data name="linkLabelScanSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="linkLabelScanSettings.Text" xml:space="preserve">
-    <value>Action:</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanSettings.Name" xml:space="preserve">
-    <value>linkLabelScanSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanSettings.Parent" xml:space="preserve">
-    <value>groupBoxSCSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanSettings.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="linkLabelScanCriticalSettingsActionDescr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelScanCriticalSettingsActionDescr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 31</value>
-  </data>
-  <data name="linkLabelScanCriticalSettingsActionDescr.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="linkLabelScanCriticalSettingsActionDescr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>342, 28</value>
-  </data>
-  <data name="linkLabelScanCriticalSettingsActionDescr.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="linkLabelScanCriticalSettingsActionDescr.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopRight</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.Name" xml:space="preserve">
-    <value>linkLabelScanCriticalSettingsActionDescr</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.Parent" xml:space="preserve">
-    <value>groupBoxSCCriticalSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanCriticalSettingsActionDescr.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="linkLabelScanCriticalAction.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="linkLabelScanCriticalAction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 31</value>
-  </data>
-  <data name="linkLabelScanCriticalAction.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
-  <data name="linkLabelScanCriticalAction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 28</value>
-  </data>
-  <data name="linkLabelScanCriticalAction.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="linkLabelScanCriticalAction.Text" xml:space="preserve">
-    <value>Action:</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanCriticalAction.Name" xml:space="preserve">
-    <value>linkLabelScanCriticalAction</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanCriticalAction.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanCriticalAction.Parent" xml:space="preserve">
-    <value>groupBoxSCCriticalSettings</value>
-  </data>
-  <data name="&gt;&gt;linkLabelScanCriticalAction.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelExScan.Name" xml:space="preserve">
-    <value>panelExScan</value>
-  </data>
-  <data name="&gt;&gt;panelExScan.Type" xml:space="preserve">
-    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.6368.24279, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;panelExScan.Parent" xml:space="preserve">
-    <value>panelExGroup</value>
-  </data>
-  <data name="&gt;&gt;panelExScan.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelExQuarantine.Name" xml:space="preserve">
-    <value>panelExQuarantine</value>
-  </data>
-  <data name="&gt;&gt;panelExQuarantine.Type" xml:space="preserve">
-    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.6368.24279, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;panelExQuarantine.Parent" xml:space="preserve">
-    <value>panelExGroup</value>
-  </data>
-  <data name="&gt;&gt;panelExQuarantine.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panelExService.Name" xml:space="preserve">
-    <value>panelExService</value>
-  </data>
-  <data name="&gt;&gt;panelExService.Type" xml:space="preserve">
-    <value>PanelsEx.PanelEx, PanelsEx, Version=1.0.6368.24279, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;panelExService.Parent" xml:space="preserve">
-    <value>panelExGroup</value>
-  </data>
-  <data name="&gt;&gt;panelExService.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panelExGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 49</value>
-  </data>
-  <data name="panelExGroup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="panelExGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 514</value>
-  </data>
-  <data name="panelExGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;panelExGroup.Name" xml:space="preserve">
-    <value>panelExGroup</value>
-  </data>
-  <data name="&gt;&gt;panelExGroup.Type" xml:space="preserve">
-    <value>PanelsEx.PanelExGroup, PanelsEx, Version=1.0.6368.24279, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;panelExGroup.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelExGroup.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="panelExScan.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -4272,6 +4128,30 @@
   </data>
   <data name="&gt;&gt;panelExService.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="panelExGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 49</value>
+  </data>
+  <data name="panelExGroup.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="panelExGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 514</value>
+  </data>
+  <data name="panelExGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelExGroup.Name" xml:space="preserve">
+    <value>panelExGroup</value>
+  </data>
+  <data name="&gt;&gt;panelExGroup.Type" xml:space="preserve">
+    <value>PanelsEx.PanelExGroup, PanelsEx, Version=1.0.6368.24279, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelExGroup.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelExGroup.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="panelExHome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
