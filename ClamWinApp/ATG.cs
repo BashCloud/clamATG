@@ -43,5 +43,15 @@ namespace ClamWinApp
         {
             listPanel[1].BringToFront();
         }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            listPanel[0].BringToFront();
+        }
+
+        private void panel4_Click(object sender, EventArgs e)
+        {
+            listPanel[1].BringToFront();
+        }
     }
 }
