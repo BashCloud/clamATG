@@ -24,7 +24,7 @@ namespace ClamWinApp
             listPanel.Add(panel7);
             listPanel.Add(panel8);
             listPanel.Add(panel9);
-            listPanel[0].BringToFront();
+            listPanel[5].BringToFront();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -75,6 +75,14 @@ namespace ClamWinApp
         private void panel12_Click(object sender, EventArgs e)
         {
             listPanel[5].BringToFront();
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+            ClamWinSettingsForm settingBox = new ClamWinSettingsForm();
+            settingBox.TopLevel = false;
+            settingBox.Show();
+            //settingBox.MdiParent = this.;
         }
     }
 }

@@ -2465,6 +2465,16 @@ namespace ClamWinApp
             ATG ATGhome = new ATG();
             ATGhome.ShowDialog();
         }
+
+        private void groupBoxDiskSpace_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelDataFiles_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
     #endregion
 }

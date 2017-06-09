@@ -293,6 +293,7 @@ namespace ClamWinApp
             this.panelDataFiles.Controls.Add(this.groupBoxDiskSpace);
             resources.ApplyResources(this.panelDataFiles, "panelDataFiles");
             this.panelDataFiles.Name = "panelDataFiles";
+            this.panelDataFiles.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDataFiles_Paint);
             // 
             // label4
             // 
@@ -309,6 +310,7 @@ namespace ClamWinApp
             resources.ApplyResources(this.groupBoxDiskSpace, "groupBoxDiskSpace");
             this.groupBoxDiskSpace.Name = "groupBoxDiskSpace";
             this.groupBoxDiskSpace.TabStop = false;
+            this.groupBoxDiskSpace.Enter += new System.EventHandler(this.groupBoxDiskSpace_Enter);
             // 
             // linkLabelQuarantineSizeValue
             // 
