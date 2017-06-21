@@ -35,13 +35,34 @@ namespace ClamWinApp
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        public void MoveWindow(MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            MoveWindow(e);
+        }
+        Color hoverColor = Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

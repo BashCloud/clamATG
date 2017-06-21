@@ -368,6 +368,57 @@
   <ItemGroup>
     <None Include="Resources\min.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50x50_dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70x50_dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50x30_dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asystguard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32_Icons\019-scan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32_Icons\024-speedometer-counter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32_Icons\021-dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32_Icons\005-firewall-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32_Icons\003-broom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32_Icons\011-settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32_Icons\012-network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32x32_Icons\023-right-menu-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24x24_Icons\006-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24x24_Icons\002-minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24x24_Icons\007-question.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
