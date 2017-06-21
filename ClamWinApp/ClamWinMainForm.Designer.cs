@@ -1290,6 +1290,7 @@ namespace ClamWinApp
             this.pictureBox5.Image = global::ClamWinApp.Properties.Resources.Update;
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -1299,6 +1300,7 @@ namespace ClamWinApp
             this.pictureBox6.Image = global::ClamWinApp.Properties.Resources.protection;
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // ClamWinMainForm
             // 

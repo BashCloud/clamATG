@@ -2475,6 +2475,18 @@ namespace ClamWinApp
         {
 
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Blank blankForm = new Blank();
+            blankForm.ShowDialog();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            clamATG clamAtg = new clamATG();
+            clamAtg.ShowDialog();
+        }
     }
     #endregion
 }
