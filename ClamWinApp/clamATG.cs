@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 namespace ClamWinApp
 {
@@ -14,16 +15,6 @@ namespace ClamWinApp
         public clamATG()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            this.WindowState= FormWindowState.Minimized;
         }
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -63,6 +54,22 @@ namespace ClamWinApp
         private void button9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Process.Start("C:/Program Files (x86)/BleachBit/bleachbit.exe");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Process.Start("C:/FWBuilder51/fwbuilder.exe");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ClamWinSettingsForm formSettings = new ClamWinSettingsForm();
+            formSettings.Show();
         }
     }
 }
