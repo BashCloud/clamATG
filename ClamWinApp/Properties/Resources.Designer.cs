@@ -103,6 +103,16 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dowbBG {
             get {
                 object obj = ResourceManager.GetObject("dowbBG", resourceCulture);
@@ -186,6 +196,16 @@ namespace ClamWinApp.Properties {
         internal static System.Drawing.Bitmap low_pr_level {
             get {
                 object obj = ResourceManager.GetObject("low_pr_level", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap min {
+            get {
+                object obj = ResourceManager.GetObject("min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
