@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClamWinApp</RootNamespace>
-    <AssemblyName>ClamWinApp</AssemblyName>
+    <AssemblyName>Asystguard</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -32,6 +32,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ClamWinApp.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Apogeelogo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
@@ -175,6 +181,12 @@
       <DependentUpon>ClamWinTrayNotifier.cs</DependentUpon>
     </Compile>
     <Compile Include="ClamWinVersion.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="FolderBrowser.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -258,6 +270,9 @@
     <EmbeddedResource Include="ClamWinTrayNotifier.resx">
       <SubType>Designer</SubType>
       <DependentUpon>ClamWinTrayNotifier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -418,6 +433,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\24x24_Icons\007-question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Apogeelogo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
