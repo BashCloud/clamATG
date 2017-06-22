@@ -14,5 +14,11 @@ namespace ClamWinApp
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            ClamWinSettingsForm formSettings = new ClamWinSettingsForm();
+            formSettings.Show();
+        }
     }
 }

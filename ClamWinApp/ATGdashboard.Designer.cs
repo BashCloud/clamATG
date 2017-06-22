@@ -1,6 +1,6 @@
 ﻿namespace ClamWinApp
 {
-    partial class Dashboard
+    partial class ATGdashboard
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,21 +34,23 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.label1.Location = new System.Drawing.Point(297, 163);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 32);
+            this.label1.Padding = new System.Windows.Forms.Padding(20);
+            this.label1.Size = new System.Drawing.Size(203, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
             // 
-            // Dashboard
+            // ATGdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.Controls.Add(this.label1);
-            this.Name = "Dashboard";
+            this.Name = "ATGdashboard";
             this.Size = new System.Drawing.Size(753, 479);
             this.ResumeLayout(false);
             this.PerformLayout();

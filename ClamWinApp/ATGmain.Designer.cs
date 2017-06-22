@@ -46,7 +46,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.dashboard1 = new ClamWinApp.Dashboard();
+            this.dashboard1 = new ClamWinApp.ATGdashboard();
             this.atGscan1 = new ClamWinApp.ATGscan();
             this.atGfirewall1 = new ClamWinApp.ATGfirewall();
             this.atGcleaner1 = new ClamWinApp.ATGcleaner();
@@ -449,7 +449,7 @@
             this.atGreport1.Size = new System.Drawing.Size(753, 787);
             this.atGreport1.TabIndex = 9;
             // 
-            // clamATG
+            // ATGmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -468,7 +468,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "clamATG";
+            this.Name = "ATGmain";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "clamATG";
@@ -499,7 +499,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
-        private Dashboard dashboard1;
+        private ATGdashboard dashboard1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private ATGscan atGscan1;

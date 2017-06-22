@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace ClamWinApp
 {
-    public partial class Dashboard : UserControl
+    public partial class ATGdashboard : UserControl
     {
-        public Dashboard()
+        public ATGdashboard()
         {
             InitializeComponent();
         }

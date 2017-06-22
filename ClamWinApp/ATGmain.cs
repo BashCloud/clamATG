@@ -109,26 +109,19 @@ namespace ClamWinApp
         private void button3_Click(object sender, EventArgs e)
         {
             MakeActive(2);
-            Process.Start("C:/FWBuilder51/fwbuilder.exe");
         }
         private void button4_Click(object sender, EventArgs e)
         {
             MakeActive(3);
-            Process.Start("C:/Program Files (x86)/BleachBit/bleachbit.exe");
         }
         private void button5_Click(object sender, EventArgs e)
         {
             MakeActive(4);
-            ClamWinSettingsForm formSettings = new ClamWinSettingsForm();
-            formSettings.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             MakeActive(5);
-            string[] arg = { };
-            ClamWinMainForm old = new ClamWinMainForm(arg);
-            old.ShowDialog();
         }
 
         private void button10_Click(object sender, EventArgs e)
