@@ -47,6 +47,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.dashboard1 = new ClamWinApp.Dashboard();
+            this.atGscan1 = new ClamWinApp.ATGscan();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -93,6 +94,7 @@
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button6
             // 
@@ -213,6 +215,7 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -236,6 +239,7 @@
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -391,6 +395,15 @@
             this.dashboard1.Size = new System.Drawing.Size(753, 787);
             this.dashboard1.TabIndex = 3;
             // 
+            // atGscan1
+            // 
+            this.atGscan1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.atGscan1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atGscan1.Location = new System.Drawing.Point(275, 59);
+            this.atGscan1.Name = "atGscan1";
+            this.atGscan1.Size = new System.Drawing.Size(753, 787);
+            this.atGscan1.TabIndex = 4;
+            // 
             // clamATG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -398,6 +411,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1028, 846);
+            this.Controls.Add(this.atGscan1);
             this.Controls.Add(this.dashboard1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -408,6 +422,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "clamATG";
+            this.Load += new System.EventHandler(this.clamATG_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -437,5 +452,6 @@
         private Dashboard dashboard1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
+        private ATGscan atGscan1;
     }
 }

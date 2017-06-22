@@ -160,6 +160,7 @@
             this.panel3.Size = new System.Drawing.Size(318, 66);
             this.panel3.TabIndex = 3;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox1
             // 

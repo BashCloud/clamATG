@@ -93,6 +93,12 @@
     <Compile Include="ATG.Designer.cs">
       <DependentUpon>ATG.cs</DependentUpon>
     </Compile>
+    <Compile Include="ATGscan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ATGscan.Designer.cs">
+      <DependentUpon>ATGscan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Blank.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ATG.resx">
       <DependentUpon>ATG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATGscan.resx">
+      <DependentUpon>ATGscan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Blank.resx">
       <DependentUpon>Blank.cs</DependentUpon>
