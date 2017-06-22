@@ -48,6 +48,11 @@
             this.button7 = new System.Windows.Forms.Button();
             this.dashboard1 = new ClamWinApp.Dashboard();
             this.atGscan1 = new ClamWinApp.ATGscan();
+            this.atGfirewall1 = new ClamWinApp.ATGfirewall();
+            this.atGcleaner1 = new ClamWinApp.ATGcleaner();
+            this.atGsettings1 = new ClamWinApp.ATGsettings();
+            this.atGabout1 = new ClamWinApp.ATGabout();
+            this.atGreport1 = new ClamWinApp.ATGreport();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -404,6 +409,46 @@
             this.atGscan1.Size = new System.Drawing.Size(753, 787);
             this.atGscan1.TabIndex = 4;
             // 
+            // atGfirewall1
+            // 
+            this.atGfirewall1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atGfirewall1.Location = new System.Drawing.Point(275, 59);
+            this.atGfirewall1.Name = "atGfirewall1";
+            this.atGfirewall1.Size = new System.Drawing.Size(753, 787);
+            this.atGfirewall1.TabIndex = 5;
+            // 
+            // atGcleaner1
+            // 
+            this.atGcleaner1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atGcleaner1.Location = new System.Drawing.Point(275, 59);
+            this.atGcleaner1.Name = "atGcleaner1";
+            this.atGcleaner1.Size = new System.Drawing.Size(753, 787);
+            this.atGcleaner1.TabIndex = 6;
+            // 
+            // atGsettings1
+            // 
+            this.atGsettings1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atGsettings1.Location = new System.Drawing.Point(275, 59);
+            this.atGsettings1.Name = "atGsettings1";
+            this.atGsettings1.Size = new System.Drawing.Size(753, 787);
+            this.atGsettings1.TabIndex = 7;
+            // 
+            // atGabout1
+            // 
+            this.atGabout1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atGabout1.Location = new System.Drawing.Point(275, 59);
+            this.atGabout1.Name = "atGabout1";
+            this.atGabout1.Size = new System.Drawing.Size(753, 787);
+            this.atGabout1.TabIndex = 8;
+            // 
+            // atGreport1
+            // 
+            this.atGreport1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atGreport1.Location = new System.Drawing.Point(275, 59);
+            this.atGreport1.Name = "atGreport1";
+            this.atGreport1.Size = new System.Drawing.Size(753, 787);
+            this.atGreport1.TabIndex = 9;
+            // 
             // clamATG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -411,6 +456,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1028, 846);
+            this.Controls.Add(this.atGreport1);
+            this.Controls.Add(this.atGabout1);
+            this.Controls.Add(this.atGsettings1);
+            this.Controls.Add(this.atGcleaner1);
+            this.Controls.Add(this.atGfirewall1);
             this.Controls.Add(this.atGscan1);
             this.Controls.Add(this.dashboard1);
             this.Controls.Add(this.panel2);
@@ -453,5 +503,10 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private ATGscan atGscan1;
+        private ATGfirewall atGfirewall1;
+        private ATGcleaner atGcleaner1;
+        private ATGsettings atGsettings1;
+        private ATGabout atGabout1;
+        private ATGreport atGreport1;
     }
 }

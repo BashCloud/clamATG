@@ -93,11 +93,41 @@
     <Compile Include="ATG.Designer.cs">
       <DependentUpon>ATG.cs</DependentUpon>
     </Compile>
+    <Compile Include="ATGabout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ATGabout.Designer.cs">
+      <DependentUpon>ATGabout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ATGcleaner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ATGcleaner.Designer.cs">
+      <DependentUpon>ATGcleaner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ATGfirewall.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ATGfirewall.Designer.cs">
+      <DependentUpon>ATGfirewall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ATGreport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ATGreport.Designer.cs">
+      <DependentUpon>ATGreport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ATGscan.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ATGscan.Designer.cs">
       <DependentUpon>ATGscan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ATGsettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ATGsettings.Designer.cs">
+      <DependentUpon>ATGsettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Blank.cs">
       <SubType>Form</SubType>
@@ -222,8 +252,23 @@
     <EmbeddedResource Include="ATG.resx">
       <DependentUpon>ATG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ATGabout.resx">
+      <DependentUpon>ATGabout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATGcleaner.resx">
+      <DependentUpon>ATGcleaner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATGfirewall.resx">
+      <DependentUpon>ATGfirewall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATGreport.resx">
+      <DependentUpon>ATGreport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ATGscan.resx">
       <DependentUpon>ATGscan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATGsettings.resx">
+      <DependentUpon>ATGsettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Blank.resx">
       <DependentUpon>Blank.cs</DependentUpon>
