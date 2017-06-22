@@ -133,6 +133,16 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _008_info1 {
+            get {
+                object obj = ResourceManager.GetObject("008-info1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _011_broom {
             get {
                 object obj = ResourceManager.GetObject("011-broom", resourceCulture);
@@ -196,6 +206,16 @@ namespace ClamWinApp.Properties {
         internal static System.Drawing.Bitmap _030_right_menu_bars {
             get {
                 object obj = ResourceManager.GetObject("030-right-menu-bars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _030_right_menu_bars1 {
+            get {
+                object obj = ResourceManager.GetObject("030-right-menu-bars1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

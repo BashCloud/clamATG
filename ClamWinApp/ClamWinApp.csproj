@@ -454,6 +454,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Apogeelogo.ico" />
+    <None Include="Resources\16x16_Icons\030-right-menu-bars.png" />
+    <None Include="Resources\16x16_Icons\008-info.png" />
     <None Include="Resources\16x16_Icons\024-process-arrows.png" />
     <None Include="Resources\16x16_Icons\007-question.png" />
     <None Include="Resources\16x16_Icons\002-minus.png" />
