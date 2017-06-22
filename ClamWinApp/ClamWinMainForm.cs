@@ -2462,7 +2462,7 @@ namespace ClamWinApp
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            clamATG clamAtg = new clamATG();
+            ATGmain clamAtg = new ATGmain();
             clamAtg.ShowDialog();
         }
     }

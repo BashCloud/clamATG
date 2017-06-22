@@ -46,7 +46,7 @@ namespace ClamWinApp
             Application.EnableVisualStyles();            
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new ClamWinMainForm(args));
-            Application.Run(new clamATG());
+            Application.Run(new ATGmain());
 
             /*try
             {

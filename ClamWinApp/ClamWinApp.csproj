@@ -135,11 +135,11 @@
     <Compile Include="Blank.Designer.cs">
       <DependentUpon>Blank.cs</DependentUpon>
     </Compile>
-    <Compile Include="clamATG.cs">
+    <Compile Include="ATGmain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="clamATG.Designer.cs">
-      <DependentUpon>clamATG.cs</DependentUpon>
+    <Compile Include="ATGmain.Designer.cs">
+      <DependentUpon>ATGmain.cs</DependentUpon>
     </Compile>
     <Compile Include="ClamWinDatabase.cs" />
     <Compile Include="ClamWinFilterData.cs" />
@@ -273,8 +273,8 @@
     <EmbeddedResource Include="Blank.resx">
       <DependentUpon>Blank.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="clamATG.resx">
-      <DependentUpon>clamATG.cs</DependentUpon>
+    <EmbeddedResource Include="ATGmain.resx">
+      <DependentUpon>ATGmain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClamWinFilterForm.resx">
       <SubType>Designer</SubType>

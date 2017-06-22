@@ -10,9 +10,9 @@ using System.Diagnostics;
 
 namespace ClamWinApp
 {
-    public partial class clamATG : Form
+    public partial class ATGmain : Form
     {
-        public clamATG()
+        public ATGmain()
         {
             InitializeComponent();
         }
