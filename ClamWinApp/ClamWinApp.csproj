@@ -454,6 +454,41 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Apogeelogo.ico" />
+    <None Include="Resources\16x16_Icons\024-process-arrows.png" />
+    <None Include="Resources\16x16_Icons\007-question.png" />
+    <None Include="Resources\16x16_Icons\002-minus.png" />
+    <None Include="Resources\16x16_Icons\006-delete.png" />
+    <None Include="Resources\24x24_Icons\031-speedometer-counter.png" />
+    <None Include="Resources\24x24_Icons\030-right-menu-bars.png" />
+    <None Include="Resources\24x24_Icons\029-database-configuration.png" />
+    <None Include="Resources\24x24_Icons\028-dashboard.png" />
+    <None Include="Resources\24x24_Icons\027-document-scanning.png" />
+    <None Include="Resources\24x24_Icons\026-scan.png" />
+    <None Include="Resources\24x24_Icons\025-militar-radar.png" />
+    <None Include="Resources\24x24_Icons\024-process-arrows.png" />
+    <None Include="Resources\24x24_Icons\023-retweet.png" />
+    <None Include="Resources\24x24_Icons\022-bar-chart-reload.png" />
+    <None Include="Resources\24x24_Icons\021-update-arrows.png" />
+    <None Include="Resources\24x24_Icons\020-update.png" />
+    <None Include="Resources\24x24_Icons\019-network.png" />
+    <None Include="Resources\24x24_Icons\018-settings.png" />
+    <None Include="Resources\24x24_Icons\017-firewall.png" />
+    <None Include="Resources\24x24_Icons\016-firewall-shield.png" />
+    <None Include="Resources\24x24_Icons\015-firewall-1.png" />
+    <None Include="Resources\24x24_Icons\014-firewall-for-windows.png" />
+    <None Include="Resources\24x24_Icons\013-firewall-2.png" />
+    <None Include="Resources\24x24_Icons\012-firewall-3.png" />
+    <None Include="Resources\24x24_Icons\011-broom.png" />
+    <None Include="Resources\24x24_Icons\010-washing-machine.png" />
+    <None Include="Resources\24x24_Icons\009-washing-machine-1.png" />
+    <None Include="Resources\24x24_Icons\008-info.png" />
+    <None Include="Resources\24x24_Icons\005-cancel-music.png" />
+    <None Include="Resources\24x24_Icons\004-cancel.png" />
+    <None Include="Resources\24x24_Icons\003-minus-symbol.png" />
+    <None Include="Resources\24x24_Icons\001-remove.png" />
+    <None Include="Resources\24x24_Icons\019-settings.png" />
+    <None Include="Resources\24x24_Icons\020-network.png" />
+    <None Include="Resources\24x24_Icons\031-right-menu-bars.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

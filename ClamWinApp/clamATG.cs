@@ -71,5 +71,12 @@ namespace ClamWinApp
             ClamWinSettingsForm formSettings = new ClamWinSettingsForm();
             formSettings.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string[] arg = { };
+            ClamWinMainForm old = new ClamWinMainForm(arg);
+            old.ShowDialog();
+        }
     }
 }

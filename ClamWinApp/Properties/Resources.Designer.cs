@@ -73,19 +73,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _003_broom {
+        internal static System.Drawing.Bitmap _002_minus1 {
             get {
-                object obj = ResourceManager.GetObject("003-broom", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _005_firewall_2 {
-            get {
-                object obj = ResourceManager.GetObject("005-firewall-2", resourceCulture);
+                object obj = ResourceManager.GetObject("002-minus1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +93,16 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _006_delete1 {
+            get {
+                object obj = ResourceManager.GetObject("006-delete1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _007_question {
             get {
                 object obj = ResourceManager.GetObject("007-question", resourceCulture);
@@ -113,9 +113,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _011_settings {
+        internal static System.Drawing.Bitmap _007_question1 {
             get {
-                object obj = ResourceManager.GetObject("011-settings", resourceCulture);
+                object obj = ResourceManager.GetObject("007-question1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _012_network {
+        internal static System.Drawing.Bitmap _008_info {
             get {
-                object obj = ResourceManager.GetObject("012-network", resourceCulture);
+                object obj = ResourceManager.GetObject("008-info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _019_scan {
+        internal static System.Drawing.Bitmap _011_broom {
             get {
-                object obj = ResourceManager.GetObject("019-scan", resourceCulture);
+                object obj = ResourceManager.GetObject("011-broom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _021_dashboard {
+        internal static System.Drawing.Bitmap _013_firewall_2 {
             get {
-                object obj = ResourceManager.GetObject("021-dashboard", resourceCulture);
+                object obj = ResourceManager.GetObject("013-firewall-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _023_right_menu_bars {
+        internal static System.Drawing.Bitmap _018_settings {
             get {
-                object obj = ResourceManager.GetObject("023-right-menu-bars", resourceCulture);
+                object obj = ResourceManager.GetObject("018-settings", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _024_speedometer_counter {
+        internal static System.Drawing.Bitmap _024_process_arrows {
             get {
-                object obj = ResourceManager.GetObject("024-speedometer-counter", resourceCulture);
+                object obj = ResourceManager.GetObject("024-process-arrows", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _50x30_dashboard {
+        internal static System.Drawing.Bitmap _026_scan {
             get {
-                object obj = ResourceManager.GetObject("50x30_dashboard", resourceCulture);
+                object obj = ResourceManager.GetObject("026-scan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _50x50_dashboard {
+        internal static System.Drawing.Bitmap _028_dashboard {
             get {
-                object obj = ResourceManager.GetObject("50x50_dashboard", resourceCulture);
+                object obj = ResourceManager.GetObject("028-dashboard", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _70x50_dashboard {
+        internal static System.Drawing.Bitmap _030_right_menu_bars {
             get {
-                object obj = ResourceManager.GetObject("70x50_dashboard", resourceCulture);
+                object obj = ResourceManager.GetObject("030-right-menu-bars", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,26 +246,6 @@ namespace ClamWinApp.Properties {
         internal static System.Drawing.Bitmap bg1 {
             get {
                 object obj = ResourceManager.GetObject("bg1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap close {
-            get {
-                object obj = ResourceManager.GetObject("close", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap dashboard_icon {
-            get {
-                object obj = ResourceManager.GetObject("dashboard-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -363,29 +343,9 @@ namespace ClamWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap min {
-            get {
-                object obj = ResourceManager.GetObject("min", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap protection {
             get {
                 object obj = ResourceManager.GetObject("protection", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap question {
-            get {
-                object obj = ResourceManager.GetObject("question", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
