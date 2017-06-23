@@ -51,10 +51,7 @@ namespace ClamWinApp
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         List<UserControl> listViews = new List<UserControl>();
         List<Button> listButtons = new List<Button>();
@@ -66,7 +63,7 @@ namespace ClamWinApp
                 if (i == index)
                 {
                     listViews[i].Visible = true;
-                    listButtons[i].BackColor = Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+                    listButtons[i].BackColor = Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
                 }
 
                 else
@@ -86,6 +83,8 @@ namespace ClamWinApp
             listViews.Add(atGsettings1);
             listViews.Add(atGabout1);
             listViews.Add(atGreport1);
+            listViews.Add(atGhelp1);
+            listViews.Add(atGupdate1);
 
             listButtons.Add(button2);
             listButtons.Add(button1);
@@ -94,6 +93,8 @@ namespace ClamWinApp
             listButtons.Add(button5);
             listButtons.Add(button6);
             listButtons.Add(button10);
+            listButtons.Add(button11);
+            listButtons.Add(button9);
             MakeActive(0);
         }
         private void button2_Click(object sender, EventArgs e)
@@ -127,6 +128,15 @@ namespace ClamWinApp
         private void button10_Click(object sender, EventArgs e)
         {
             MakeActive(6);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            MakeActive(7);
+        }
+        private void button9_Click(object sender, EventArgs e)
+        {
+            MakeActive(8);
         }
     }
 }

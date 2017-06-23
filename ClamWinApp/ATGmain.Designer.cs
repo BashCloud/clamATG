@@ -53,6 +53,8 @@
             this.atGsettings1 = new ClamWinApp.ATGsettings();
             this.atGabout1 = new ClamWinApp.ATGabout();
             this.atGreport1 = new ClamWinApp.ATGreport();
+            this.atGhelp1 = new ClamWinApp.ATGhelp();
+            this.atGupdate1 = new ClamWinApp.ATGupdate();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -61,7 +63,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
@@ -74,7 +76,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(275, 846);
+            this.panel1.Size = new System.Drawing.Size(275, 950);
             this.panel1.TabIndex = 0;
             // 
             // button10
@@ -248,16 +250,16 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 790);
+            this.panel4.Location = new System.Drawing.Point(0, 894);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(275, 56);
             this.panel4.TabIndex = 1;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -327,6 +329,7 @@
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button9
             // 
@@ -397,7 +400,7 @@
             this.dashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dashboard1.Location = new System.Drawing.Point(275, 59);
             this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(753, 787);
+            this.dashboard1.Size = new System.Drawing.Size(753, 891);
             this.dashboard1.TabIndex = 3;
             // 
             // atGscan1
@@ -406,48 +409,71 @@
             this.atGscan1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.atGscan1.Location = new System.Drawing.Point(275, 59);
             this.atGscan1.Name = "atGscan1";
-            this.atGscan1.Size = new System.Drawing.Size(753, 787);
+            this.atGscan1.Size = new System.Drawing.Size(753, 891);
             this.atGscan1.TabIndex = 4;
             // 
             // atGfirewall1
             // 
+            this.atGfirewall1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.atGfirewall1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.atGfirewall1.Location = new System.Drawing.Point(275, 59);
             this.atGfirewall1.Name = "atGfirewall1";
-            this.atGfirewall1.Size = new System.Drawing.Size(753, 787);
+            this.atGfirewall1.Size = new System.Drawing.Size(753, 891);
             this.atGfirewall1.TabIndex = 5;
             // 
             // atGcleaner1
             // 
+            this.atGcleaner1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.atGcleaner1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.atGcleaner1.Location = new System.Drawing.Point(275, 59);
             this.atGcleaner1.Name = "atGcleaner1";
-            this.atGcleaner1.Size = new System.Drawing.Size(753, 787);
+            this.atGcleaner1.Size = new System.Drawing.Size(753, 891);
             this.atGcleaner1.TabIndex = 6;
             // 
             // atGsettings1
             // 
+            this.atGsettings1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.atGsettings1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.atGsettings1.Location = new System.Drawing.Point(275, 59);
             this.atGsettings1.Name = "atGsettings1";
-            this.atGsettings1.Size = new System.Drawing.Size(753, 787);
+            this.atGsettings1.Size = new System.Drawing.Size(753, 891);
             this.atGsettings1.TabIndex = 7;
             // 
             // atGabout1
             // 
+            this.atGabout1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.atGabout1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.atGabout1.Location = new System.Drawing.Point(275, 59);
             this.atGabout1.Name = "atGabout1";
-            this.atGabout1.Size = new System.Drawing.Size(753, 787);
+            this.atGabout1.Size = new System.Drawing.Size(753, 891);
             this.atGabout1.TabIndex = 8;
             // 
             // atGreport1
             // 
+            this.atGreport1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
             this.atGreport1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.atGreport1.Location = new System.Drawing.Point(275, 59);
             this.atGreport1.Name = "atGreport1";
-            this.atGreport1.Size = new System.Drawing.Size(753, 787);
+            this.atGreport1.Size = new System.Drawing.Size(753, 891);
             this.atGreport1.TabIndex = 9;
+            // 
+            // atGhelp1
+            // 
+            this.atGhelp1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.atGhelp1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atGhelp1.Location = new System.Drawing.Point(275, 59);
+            this.atGhelp1.Name = "atGhelp1";
+            this.atGhelp1.Size = new System.Drawing.Size(753, 891);
+            this.atGhelp1.TabIndex = 10;
+            // 
+            // atGupdate1
+            // 
+            this.atGupdate1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.atGupdate1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.atGupdate1.Location = new System.Drawing.Point(275, 59);
+            this.atGupdate1.Name = "atGupdate1";
+            this.atGupdate1.Size = new System.Drawing.Size(753, 891);
+            this.atGupdate1.TabIndex = 11;
             // 
             // ATGmain
             // 
@@ -455,7 +481,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1028, 846);
+            this.ClientSize = new System.Drawing.Size(1028, 950);
+            this.Controls.Add(this.atGupdate1);
+            this.Controls.Add(this.atGhelp1);
             this.Controls.Add(this.atGreport1);
             this.Controls.Add(this.atGabout1);
             this.Controls.Add(this.atGsettings1);
@@ -508,5 +536,7 @@
         private ATGsettings atGsettings1;
         private ATGabout atGabout1;
         private ATGreport atGreport1;
+        private ATGhelp atGhelp1;
+        private ATGupdate atGupdate1;
     }
 }

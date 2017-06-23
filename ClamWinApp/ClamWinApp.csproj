@@ -111,6 +111,12 @@
     <Compile Include="ATGfirewall.Designer.cs">
       <DependentUpon>ATGfirewall.cs</DependentUpon>
     </Compile>
+    <Compile Include="ATGhelp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ATGhelp.Designer.cs">
+      <DependentUpon>ATGhelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="ATGreport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -128,6 +134,12 @@
     </Compile>
     <Compile Include="ATGsettings.Designer.cs">
       <DependentUpon>ATGsettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ATGupdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ATGupdate.Designer.cs">
+      <DependentUpon>ATGupdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Blank.cs">
       <SubType>Form</SubType>
@@ -261,6 +273,9 @@
     <EmbeddedResource Include="ATGfirewall.resx">
       <DependentUpon>ATGfirewall.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ATGhelp.resx">
+      <DependentUpon>ATGhelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ATGreport.resx">
       <DependentUpon>ATGreport.cs</DependentUpon>
     </EmbeddedResource>
@@ -269,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ATGsettings.resx">
       <DependentUpon>ATGsettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATGupdate.resx">
+      <DependentUpon>ATGupdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Blank.resx">
       <DependentUpon>Blank.cs</DependentUpon>
