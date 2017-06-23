@@ -92,7 +92,7 @@
             this.button10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.button10.Image = global::ClamWinApp.Properties.Resources._030_right_menu_bars1;
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(0, 584);
+            this.button10.Location = new System.Drawing.Point(0, 618);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.button10.Size = new System.Drawing.Size(275, 65);
@@ -116,7 +116,7 @@
             this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.button6.Image = global::ClamWinApp.Properties.Resources._008_info1;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 519);
+            this.button6.Location = new System.Drawing.Point(0, 553);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.button6.Size = new System.Drawing.Size(275, 65);
@@ -141,7 +141,7 @@
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 454);
+            this.button5.Location = new System.Drawing.Point(0, 488);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.button5.Size = new System.Drawing.Size(275, 65);
@@ -165,7 +165,7 @@
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 389);
+            this.button4.Location = new System.Drawing.Point(0, 423);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.button4.Size = new System.Drawing.Size(275, 65);
@@ -189,7 +189,7 @@
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 324);
+            this.button3.Location = new System.Drawing.Point(0, 358);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.button3.Size = new System.Drawing.Size(275, 65);
@@ -213,7 +213,7 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 259);
+            this.button1.Location = new System.Drawing.Point(0, 293);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.button1.Size = new System.Drawing.Size(275, 65);
@@ -237,7 +237,7 @@
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 194);
+            this.button2.Location = new System.Drawing.Point(0, 228);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.button2.Size = new System.Drawing.Size(275, 65);
@@ -265,7 +265,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(275, 194);
+            this.panel3.Size = new System.Drawing.Size(275, 228);
             this.panel3.TabIndex = 0;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -273,7 +273,7 @@
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.Asystguard;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 39);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 58);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(275, 93);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -287,12 +287,13 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.label1.Location = new System.Drawing.Point(0, 132);
+            this.label1.Location = new System.Drawing.Point(0, 151);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(15);
-            this.label1.Size = new System.Drawing.Size(235, 62);
+            this.label1.Padding = new System.Windows.Forms.Padding(30, 15, 15, 30);
+            this.label1.Size = new System.Drawing.Size(234, 77);
             this.label1.TabIndex = 2;
-            this.label1.Text = "    AsystGuard";
+            this.label1.Text = "  AsystGuard";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
