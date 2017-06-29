@@ -21,5 +21,15 @@ namespace ClamWinApp
             ClamWinMainForm old = new ClamWinMainForm(arg);
             old.ShowDialog();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            //to be deleted.
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            //to be deleted.
+        }
     }
 }

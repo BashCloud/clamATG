@@ -13,6 +13,19 @@ namespace ClamWinApp
         public ATGdashboard()
         {
             InitializeComponent();
+            // Scanner initialization            
+            if (!ClamWinScanner.Open(this.Handle))
+            {
+                System.Windows.Forms.MessageBox.Show("Unable to open main scanner service.",
+                                                     "Asystguard",
+                                                     MessageBoxButtons.OK,
+                                                     MessageBoxIcon.Error);
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

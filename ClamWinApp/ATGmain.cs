@@ -12,10 +12,13 @@ namespace ClamWinApp
 {
     public partial class ATGmain : Form
     {
+        public static Color mainBG = Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
         public ATGmain()
         {
             InitializeComponent();
+            this.BackColor = mainBG;
         }
+        
 
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -55,6 +58,10 @@ namespace ClamWinApp
 
         List<UserControl> listViews = new List<UserControl>();
         List<Button> listButtons = new List<Button>();
+        String[] listTitle = new String[] 
+            {"Dashboard","Scan","Firewall",
+             "Cleaner","Setings","About",
+             "Report","Help","Update"};
         public void MakeActive(int index)
         {
             int i;
@@ -64,6 +71,7 @@ namespace ClamWinApp
                 {
                     listViews[i].Visible = true;
                     listButtons[i].BackColor = Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+                    mainTitle.Text = listTitle[i];
                 }
 
                 else
