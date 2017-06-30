@@ -27,5 +27,30 @@ namespace ClamWinApp
         {
             //to be deleted.
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            //To be deleted.
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            //to be deleted.
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            // to be deleted
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            // to be deleted
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            // to be deleted
+        }
     }
 }

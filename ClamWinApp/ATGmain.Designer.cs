@@ -324,6 +324,8 @@
             this.mainTitle.Size = new System.Drawing.Size(104, 49);
             this.mainTitle.TabIndex = 13;
             this.mainTitle.Text = "Asyst";
+            this.mainTitle.Visible = false;
+            this.mainTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // button11
             // 
