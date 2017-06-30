@@ -76,7 +76,7 @@
             // 
             // pictureBox6
             // 
-            //this.pictureBox6.Image = global::ClamWinApp.Properties.Resources.question;
+            this.pictureBox6.Image = global::ClamWinApp.Properties.Resources.question1;
             this.pictureBox6.Location = new System.Drawing.Point(20, 0);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox6.Name = "pictureBox6";
