@@ -529,6 +529,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Apogeelogo.ico" />
+    <None Include="Resources\refresh-left-arrow.png" />
+    <None Include="Resources\database.png" />
     <None Include="Resources\firewall.png" />
     <None Include="Resources\scan1.png" />
     <None Include="Resources\security2.png" />

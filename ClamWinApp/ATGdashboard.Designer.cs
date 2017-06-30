@@ -34,20 +34,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -125,6 +125,17 @@
             this.panel2.Size = new System.Drawing.Size(337, 126);
             this.panel2.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ClamWinApp.Properties.Resources.security2;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -140,6 +151,59 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(800, 150);
             this.panel6.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Arial", 8F);
+            this.label6.ForeColor = System.Drawing.Color.Silver;
+            this.label6.Location = new System.Drawing.Point(302, 83);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(5);
+            this.label6.Size = new System.Drawing.Size(113, 28);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "30/June/2017";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial", 8F);
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(302, 55);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(5);
+            this.label3.Size = new System.Drawing.Size(113, 28);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "30/June/2017";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(135, 83);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
+            this.label1.Size = new System.Drawing.Size(175, 29);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Definition Update : ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.shield;
+            this.pictureBox3.Location = new System.Drawing.Point(20, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(112, 103);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
             // label4
             // 
@@ -168,70 +232,6 @@
             this.label5.Text = "Your Device is being protected.";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(135, 83);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(15, 5, 5, 5);
-            this.label1.Size = new System.Drawing.Size(175, 29);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Definition Update : ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial", 8F);
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(302, 55);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(5);
-            this.label3.Size = new System.Drawing.Size(113, 28);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "30/June/2017";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 8F);
-            this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(302, 83);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(5);
-            this.label6.Size = new System.Drawing.Size(113, 28);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "30/June/2017";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.shield;
-            this.pictureBox3.Location = new System.Drawing.Point(20, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(112, 103);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ClamWinApp.Properties.Resources.security2;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 88);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // ATGdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -245,10 +245,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
