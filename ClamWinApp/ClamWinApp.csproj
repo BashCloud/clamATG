@@ -529,6 +529,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Apogeelogo.ico" />
+    <None Include="Resources\128x128_Icons\updates.png" />
     <None Include="Resources\128x128_Icons\question.png" />
     <None Include="Resources\128x128_Icons\update.png" />
     <None Include="Resources\128x128_Icons\report.png" />

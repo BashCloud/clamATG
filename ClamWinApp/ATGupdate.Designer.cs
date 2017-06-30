@@ -32,9 +32,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -94,17 +94,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Definition Update : ";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.Update;
-            this.pictureBox3.Location = new System.Drawing.Point(20, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(112, 103);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -129,6 +118,17 @@
             this.label5.Size = new System.Drawing.Size(423, 53);
             this.label5.TabIndex = 1;
             this.label5.Text = "Update Database Definitions.";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.updates;
+            this.pictureBox3.Location = new System.Drawing.Point(20, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(112, 103);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
             // ATGupdate
             // 

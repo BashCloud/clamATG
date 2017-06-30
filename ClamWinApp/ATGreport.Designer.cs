@@ -96,7 +96,7 @@
             // 
             // pictureBox3
             // 
-            //this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.report2;
+            this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.report3;
             this.pictureBox3.Location = new System.Drawing.Point(20, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox3.Name = "pictureBox3";

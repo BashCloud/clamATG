@@ -30,8 +30,8 @@
         {
             this.panel5 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
@@ -62,17 +62,6 @@
             this.label18.TabIndex = 5;
             this.label18.Text = "Supercharge your system with advanced Cleaner.";
             // 
-            // pictureBox6
-            // 
-            //this.pictureBox6.Image = global::ClamWinApp.Properties.Resources.basket1;
-            this.pictureBox6.Location = new System.Drawing.Point(20, 0);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(112, 103);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -84,6 +73,17 @@
             this.label19.Size = new System.Drawing.Size(221, 53);
             this.label19.TabIndex = 1;
             this.label19.Text = "Asyst Cleaner";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::ClamWinApp.Properties.Resources.basket2;
+            this.pictureBox6.Location = new System.Drawing.Point(20, 0);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(112, 103);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
             // 
             // ATGcleaner
             // 
