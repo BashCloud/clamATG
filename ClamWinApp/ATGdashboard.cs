@@ -52,5 +52,10 @@ namespace ClamWinApp
         {
             // to be deleted
         }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            // deleted..
+        }
     }
 }
