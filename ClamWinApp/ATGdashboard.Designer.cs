@@ -37,14 +37,17 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -56,24 +59,24 @@
             this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 179);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 153);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(20);
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 174F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(731, 380);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(794, 380);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(385, 206);
+            this.panel4.Location = new System.Drawing.Point(417, 206);
             this.panel4.Margin = new System.Windows.Forms.Padding(20);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(306, 134);
+            this.panel4.Size = new System.Drawing.Size(337, 134);
             this.panel4.TabIndex = 2;
             // 
             // panel3
@@ -83,7 +86,7 @@
             this.panel3.Location = new System.Drawing.Point(40, 206);
             this.panel3.Margin = new System.Windows.Forms.Padding(20);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(305, 134);
+            this.panel3.Size = new System.Drawing.Size(337, 134);
             this.panel3.TabIndex = 2;
             // 
             // panel1
@@ -94,7 +97,7 @@
             this.panel1.Location = new System.Drawing.Point(40, 40);
             this.panel1.Margin = new System.Windows.Forms.Padding(20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(305, 126);
+            this.panel1.Size = new System.Drawing.Size(337, 126);
             this.panel1.TabIndex = 0;
             // 
             // label2
@@ -114,11 +117,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(385, 40);
+            this.panel2.Location = new System.Drawing.Point(417, 40);
             this.panel2.Margin = new System.Windows.Forms.Padding(20);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(306, 126);
+            this.panel2.Size = new System.Drawing.Size(337, 126);
             this.panel2.TabIndex = 1;
             // 
             // panel6
@@ -134,7 +138,7 @@
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(753, 150);
+            this.panel6.Size = new System.Drawing.Size(800, 150);
             this.panel6.TabIndex = 6;
             // 
             // label4
@@ -163,17 +167,6 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Your Device is being protected.";
             this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.shield;
-            this.pictureBox3.Location = new System.Drawing.Point(20, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(112, 103);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
             // 
             // label1
             // 
@@ -217,6 +210,28 @@
             this.label6.Text = "30/June/2017";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ClamWinApp.Properties.Resources.shield;
+            this.pictureBox3.Location = new System.Drawing.Point(20, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(112, 103);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ClamWinApp.Properties.Resources.security2;
+            this.pictureBox1.Location = new System.Drawing.Point(14, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 88);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // ATGdashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -225,13 +240,15 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ATGdashboard";
-            this.Size = new System.Drawing.Size(753, 900);
+            this.Size = new System.Drawing.Size(800, 800);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -250,5 +267,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
