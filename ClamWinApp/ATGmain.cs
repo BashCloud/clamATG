@@ -38,7 +38,7 @@ namespace ClamWinApp
             }
         }
 
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        public void panel2_MouseDown(object sender, MouseEventArgs e)
         {
             MoveWindow(e);
         }

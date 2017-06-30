@@ -14,5 +14,12 @@ namespace ClamWinApp
         {
             InitializeComponent();
         }
+
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            //ATGmain.MoveWindow(e);
+            //ATGmain glob = new ATGmain();
+            //glob.MoveWindow(e);
+        }
     }
 }

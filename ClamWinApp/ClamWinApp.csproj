@@ -117,6 +117,9 @@
     <Compile Include="ATGhelp.Designer.cs">
       <DependentUpon>ATGhelp.cs</DependentUpon>
     </Compile>
+    <Compile Include="ATglobal.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ATGreport.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -526,6 +529,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Apogeelogo.ico" />
+    <None Include="Resources\scanBlue.png" />
     <None Include="Resources\unlock.png" />
     <None Include="Resources\keyword.png" />
     <None Include="Resources\16x16_Icons\030-right-menu-bars.png" />
