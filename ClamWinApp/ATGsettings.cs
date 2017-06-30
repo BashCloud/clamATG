@@ -20,5 +20,10 @@ namespace ClamWinApp
             ClamWinSettingsForm formSettings = new ClamWinSettingsForm();
             formSettings.Show();
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            // To be deleted.
+        }
     }
 }

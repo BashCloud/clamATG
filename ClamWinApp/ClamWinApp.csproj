@@ -529,6 +529,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Apogeelogo.ico" />
+    <None Include="Resources\128x128_Icons\settings.png" />
     <None Include="Resources\refresh-left-arrow.png" />
     <None Include="Resources\database.png" />
     <None Include="Resources\firewall.png" />
